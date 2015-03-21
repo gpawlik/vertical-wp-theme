@@ -1174,4 +1174,89 @@ function funky_register_required_plugins() {
 
 }
 
+
+/* SHORTCODES */
+/**************/
+function gp_image_with_caption( $atts ) {
+    $a = shortcode_atts( array(
+        'image'   => '',
+        'caption' => '',
+        'color'   => '',
+        'class'   => '',
+        'grid'    => '1-3'
+    ), $atts );
+
+    $output = '<div class="gp-caption-image gp-grid-' . $a['grid'] . ' ' . $a['class'] . '">' .
+              '<div class="gp-caption-image-box" style="background-image:url(' . $a['image'] . ')"></div>' .
+              '<p class="gp-caption-text" style="color:' . $a['color'] . '">' . $a['caption'] . '</p>' .
+              '</div>';
+    
+    return $output;
+}
+add_shortcode( 'image_box', 'gp_image_with_caption' );
+
+
+function gp_recent_posts($atts) {
+    $a = shortcode_atts( array(
+        'title' => '',
+        'posts' => 3,
+        'grid'  => '1-3'
+    ), $atts);
+
+    $title = (!empty($a['title'])) ? '<h3>' . $a['title'] . '</h3>' : '';
+
+    $output = $title;
+    $output .= '<ul>';
+    
+    query_posts(
+        array(
+            'orderby'   => 'date', 
+            'order'     => 'DESC' , 
+            'showposts' => $a['posts']
+        )
+    );
+    if (have_posts()) :
+        while (have_posts()) : the_post();
+            $output .= '<li class="gp-grid-' . $a['grid'] . '"><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+        endwhile;
+    endif;
+    
+    $output .= '</ul>';
+
+    wp_reset_query();
+    return $output;
+}
+add_shortcode('recent_posts', 'gp_recent_posts');
+
+
+function gp_list_child_pages($atts) {
+    $a = shortcode_atts( array(
+        'title'  => '',
+        'parent' => '',
+        'limit'  => 3,
+        'grid'   => '1-3'
+    ), $atts);
+    
+    $posts_array = get_posts(
+        array(
+            'post_type' => 'page',
+            'numberposts' => $a['limit'],
+            'post_status' => 'publish',
+            'post_parent' => $a['parent']
+        )
+    );         
+    
+    $title = (!empty($a['title'])) ? '<h3>' . $a['title'] . '</h3>' : '';
+    
+    $output = $title;
+    $output .= '<ul>';    
+    foreach($posts_array as $post) {
+        $output .= '<li><a href="' . get_permalink($post->ID) . '">' . $post->post_title . '</a></li>';
+    }
+    $output .= '</ul>';    
+
+    return $output;
+}
+add_shortcode('childpages', 'gp_list_child_pages');
+
 ?>
