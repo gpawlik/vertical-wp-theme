@@ -1,0 +1,1568 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Reach WordPress Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-22 13:40-0000\n"
+"PO-Revision-Date: 2013-10-22 13:40-0000\n"
+"Last-Translator: Eugene Okoronkwo <hellow@raw-brand.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:15
+msgid "Oops! Page Not Found."
+msgstr ""
+
+#: ../404.php:21
+msgid ""
+"The page or content you are looking for could not be found. It might have "
+"been moved or deleted. Please use the links below to find what you are "
+"looking for."
+msgstr ""
+
+#: ../404.php:41 ../page-sitemap.php:72
+msgid "Main RSS"
+msgstr ""
+
+#: ../404.php:42 ../page-sitemap.php:73
+msgid "Comments Feed"
+msgstr ""
+
+#: ../archive.php:25
+#, php-format
+msgid "Posts Tagged &#8216;%s&#8217;"
+msgstr ""
+
+#: ../archive.php:27 ../archive.php:29 ../archive.php:31
+#, php-format
+msgid "Archive for %s"
+msgstr ""
+
+#: ../archive.php:33
+msgid "Author Archive"
+msgstr ""
+
+#: ../archive.php:35
+msgid "Blog Archives"
+msgstr ""
+
+#: ../comments.php:16
+msgid "0 Comments"
+msgstr ""
+
+#: ../comments.php:16
+msgid "1 Comment"
+msgstr ""
+
+#: ../comments.php:16
+msgid "% Comments"
+msgstr ""
+
+#: ../comments.php:41
+msgid "Be the first to post a comment."
+msgstr ""
+
+#: ../comments.php:51
+msgid "You must be logged in to post a comment."
+msgstr ""
+
+#: ../comments.php:58 ../page-contact.php:155
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:65 ../page-contact.php:164
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:72
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:80
+#, php-format
+msgid ""
+"Logged in as %1$s. <a href=\"%2$s\" title=\"Log out of this account\">Log "
+"out?</a>"
+msgstr ""
+
+#: ../comments.php:82
+msgid "Leave a Comment"
+msgstr ""
+
+#: ../comments.php:83
+msgid "Submit"
+msgstr ""
+
+#: ../functions.php:116
+msgid "Main Navigation"
+msgstr ""
+
+#: ../functions.php:117
+msgid "Sitemap"
+msgstr ""
+
+#: ../functions.php:737 ../sidebar.php:26
+msgid "Page Sidebar"
+msgstr ""
+
+#: ../functions.php:737
+msgid "Sidebar used on pages."
+msgstr ""
+
+#: ../functions.php:738 ../sidebar.php:5
+msgid "Home Page Sidebar"
+msgstr ""
+
+#: ../functions.php:738
+msgid "Sidebar used on home page template."
+msgstr ""
+
+#: ../functions.php:739 ../sidebar.php:22
+msgid "Post Sidebar"
+msgstr ""
+
+#: ../functions.php:739
+msgid "Sidebar used on blog index, archives, search page and posts."
+msgstr ""
+
+#: ../functions.php:740 ../sidebar.php:13
+msgid "Portfolio Sidebar"
+msgstr ""
+
+#: ../functions.php:740
+msgid "Sidebar used on portfolio index and portfolio items."
+msgstr ""
+
+#: ../functions.php:1067
+msgid "Prev"
+msgstr ""
+
+#: ../functions.php:1075
+msgid "Next"
+msgstr ""
+
+#: ../functions.php:1159 ../inc/plugins/class-tgm-plugin-activation.php:164
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../functions.php:1160 ../inc/plugins/class-tgm-plugin-activation.php:165
+msgid "Install Plugins"
+msgstr ""
+
+#: ../functions.php:1161 ../inc/plugins/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../functions.php:1162
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../functions.php:1173 ../inc/plugins/class-tgm-plugin-activation.php:180
+#: ../inc/plugins/class-tgm-plugin-activation.php:510
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../functions.php:1174 ../inc/plugins/class-tgm-plugin-activation.php:181
+#: ../inc/plugins/class-tgm-plugin-activation.php:1908
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../functions.php:1175
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../loop-grid.php:43
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../loop.php:45
+msgid "No posts to display. Please check back soon!"
+msgstr ""
+
+#: ../loop.php:46
+msgid "Return to home page"
+msgstr ""
+
+#: ../navigation.php:38
+msgid "Select a page ..."
+msgstr ""
+
+#: ../navigation.php:56
+msgid "Follow on Facebook"
+msgstr ""
+
+#: ../navigation.php:59
+msgid "Follow on Twitter"
+msgstr ""
+
+#: ../navigation.php:62
+msgid "Follow on google+"
+msgstr ""
+
+#: ../navigation.php:65
+msgid "Follow on Dribbble"
+msgstr ""
+
+#: ../navigation.php:68
+msgid "Follow on LinkedIn"
+msgstr ""
+
+#: ../navigation.php:71
+msgid "Follow on Vimeo"
+msgstr ""
+
+#: ../navigation.php:74
+msgid "Follow on YouTube"
+msgstr ""
+
+#: ../page-archive.php:57
+msgid "Last 30 posts"
+msgstr ""
+
+#: ../page-archive.php:74 ../page-sitemap.php:76
+#: ../inc/post-types/portfolio.php:75
+msgid "Categories"
+msgstr ""
+
+#: ../page-archive.php:83 ../page-sitemap.php:85
+msgid "Archives"
+msgstr ""
+
+#: ../page-contact.php:37
+msgid "You forgot to enter your name."
+msgstr ""
+
+#: ../page-contact.php:44
+msgid "You forgot to enter your email address."
+msgstr ""
+
+#: ../page-contact.php:47
+msgid "You entered an invalid email address."
+msgstr ""
+
+#: ../page-contact.php:54
+msgid "You forgot to enter your message."
+msgstr ""
+
+#: ../page-contact.php:147
+msgid "There was an error submitting your message."
+msgstr ""
+
+#: ../page-contact.php:173
+msgid "Message"
+msgstr ""
+
+#: ../page-contact.php:184
+msgid "Send copy of email to yourself"
+msgstr ""
+
+#: ../page-contact.php:188
+msgid "Send Message"
+msgstr ""
+
+#: ../page-contact.php:192
+msgid "If you want to submit this form, do not enter anything in this field"
+msgstr ""
+
+#: ../page-contact.php:203
+msgid "Thank you. Your message has been sent."
+msgstr ""
+
+#: ../page-portfolio.php:63
+msgid "All"
+msgstr ""
+
+#: ../page-sitemap.php:70
+msgid "Feeds"
+msgstr ""
+
+#: ../search.php:15
+#, php-format
+msgid "Search Results for \"%s\""
+msgstr ""
+
+#: ../search.php:18
+#, php-format
+msgid "%s results found."
+msgstr ""
+
+#: ../searchform.php:4
+msgid "Search"
+msgstr ""
+
+#: ../single-portfolio.php:54 ../inc/post-types/portfolio.php:73
+msgid "Client"
+msgstr ""
+
+#: ../single-portfolio.php:59 ../inc/post-types/portfolio.php:74
+msgid "Date"
+msgstr ""
+
+#: ../single-portfolio.php:71
+msgid "View Project"
+msgstr ""
+
+#: ../single-portfolio.php:103
+msgid "Page not found."
+msgstr ""
+
+#: ../inc/funky-comments.php:25
+msgid "at"
+msgstr ""
+
+#: ../inc/funky-comments.php:27
+msgid "says"
+msgstr ""
+
+#: ../inc/funky-comments.php:32
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/funky-comments.php:39
+msgid "Reply"
+msgstr ""
+
+#: ../inc/plugins/class-envato-protected-api.php:67
+msgid "Please enter your Envato Marketplace Username."
+msgstr ""
+
+#: ../inc/plugins/class-envato-protected-api.php:71
+msgid "Please enter your Envato Marketplace API Key."
+msgstr ""
+
+#: ../inc/plugins/class-envato-protected-api.php:96
+msgid "The API \"set\" is a required parameter."
+msgstr ""
+
+#: ../inc/plugins/class-envato-protected-api.php:167
+msgid "The Envato Marketplace \"item ID\" is a required parameter."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:182
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:537
+#: ../inc/plugins/class-tgm-plugin-activation.php:2120
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:565
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:738
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1125
+msgid "External Link"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1130
+msgid "Private Repository"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1133
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1137
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1140
+msgid "Required"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1140
+msgid "Recommended"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1143
+msgid "Not Installed"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1145
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1147
+msgid "Not Updated"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1149
+msgid "Active"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1343
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1359
+msgid "Plugin"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1360
+msgid "Source"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1361
+msgid "Type"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1362
+msgid "Status"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1380
+msgid "Install"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1381
+msgid "Activate"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1891
+msgid "Install package not available."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1892
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1893
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1894
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1895
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1896
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:1907
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:2017
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:2018
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:2018
+#: ../inc/plugins/class-tgm-plugin-activation.php:2027
+msgid "Show Details"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:2018
+#: ../inc/plugins/class-tgm-plugin-activation.php:2027
+msgid "Hide Details"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:2019
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:2020
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:2024
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:2025
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:2026
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:2027
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:2028
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../inc/plugins/class-tgm-plugin-activation.php:2029
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/plugins/widgets.php:13
+msgid "Contact details"
+msgstr ""
+
+#: ../inc/plugins/widgets.php:70
+msgid "Title:"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:9
+msgid "Portfolio Items"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:10
+msgid "Portfolio Item"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:11 ../inc/post-types/sliders.php:10
+#: ../inc/post-types/staff.php:11
+msgid "Add New"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:12
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:13
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:14
+msgid "New Portfolio Item"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:15
+msgid "View Portfolio Item"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:16 ../inc/post-types/portfolio.php:49
+msgid "Search Portfolio"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:17 ../inc/post-types/sliders.php:16
+#: ../inc/post-types/staff.php:17
+msgid "Nothing found"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:18 ../inc/post-types/sliders.php:17
+#: ../inc/post-types/staff.php:18
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:29
+msgid "portfolios"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:47 ../inc/post-types/portfolio.php:58
+msgid "Portfolios"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:48
+msgid "Portfolio"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:50
+msgid "Popular Portfolio"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:51
+msgid "All Portfolios"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:52
+msgid "Edit Portfolio"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:53
+msgid "Update Portfolio"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:54
+msgid "Add New Portfolio"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:55
+msgid "New Portfolio Name"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:56
+msgid "Add or remove portfolio"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:57
+msgid "Choose from the most used portfolio"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:72 ../inc/post-types/sliders.php:66
+#: ../inc/post-types/staff.php:50
+msgid "Title"
+msgstr ""
+
+#: ../inc/post-types/portfolio.php:76 ../inc/post-types/sliders.php:67
+#: ../inc/post-types/staff.php:52
+msgid "Image"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:8
+msgid "Slides"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:9
+msgid "Slide"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:11
+msgid "Add New Slide"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:12
+msgid "Edit Slide"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:13
+msgid "New Slide"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:14
+msgid "View Slide"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:15
+msgid "Search Slides"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:42 ../inc/post-types/sliders.php:53
+#: ../inc/post-types/sliders.php:69
+msgid "Sliders"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:43
+msgid "Slider"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:44
+msgid "Search SlidersCategory"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:45
+msgid "Popular Sliders"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:46
+msgid "All sliders"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:47
+msgid "Edit slider"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:48
+msgid "Update Slider"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:49
+msgid "Add New Slider"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:50
+msgid "New Slider Name"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:51
+msgid "Add or remove slider"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:52
+msgid "Choose from the most used categories"
+msgstr ""
+
+#: ../inc/post-types/sliders.php:68
+msgid "Caption"
+msgstr ""
+
+#: ../inc/post-types/staff.php:9 ../inc/post-types/staff.php:10
+msgid "Staff"
+msgstr ""
+
+#: ../inc/post-types/staff.php:12
+msgid "Add New Profile"
+msgstr ""
+
+#: ../inc/post-types/staff.php:13
+msgid "Edit Profile"
+msgstr ""
+
+#: ../inc/post-types/staff.php:14
+msgid "New Profile"
+msgstr ""
+
+#: ../inc/post-types/staff.php:15
+msgid "View Profile"
+msgstr ""
+
+#: ../inc/post-types/staff.php:16
+msgid "Search Profiles"
+msgstr ""
+
+#: ../inc/post-types/staff.php:29
+msgid "profiles"
+msgstr ""
+
+#: ../inc/post-types/staff.php:51
+msgid "Role"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:51
+msgid "Background Options"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:60
+msgid "Background Source"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:61
+msgid "Select background for this page."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:65
+msgid "Theme Default"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:66
+msgid "WP Custom Background"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:67
+msgid "Feature Image"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:68
+msgid "Slideshow (Attached Images)"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:69
+msgid "From URL"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:76
+msgid "Background URL"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:77
+msgid "Upload an image or enter an URL."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:92
+msgid "Contact Options"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:101
+msgid "Map Address"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:102
+msgid "Enter the address to be shown on the embedded google map."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:118
+msgid "Portfolio Options"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:127
+msgid "Portfolio Category"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:128
+msgid "Select a Portfolio Category to display on this page."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:136
+msgid "Enable Filter"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:137
+msgid "Select this option to enable jQuery filtering."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:144
+msgid "Portfolio Items Per Page"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:145
+msgid ""
+"Enter the number of portfolio items to show on each page. Leave blank to "
+"show all portfolio items on one pages."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:161
+msgid "Portfolio Item Options"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:170
+msgid "Page Layout"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:171
+msgid "Use this option to select the page's layout."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:175
+msgid "1 Column"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:176
+#: ../inc/template-options/template-options-config.php:178
+msgid "2 Column"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:183
+#: ../inc/template-options/template-options-config.php:258
+msgid "Page Title"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:184
+#: ../inc/template-options/template-options-config.php:259
+msgid "Use this option to output a different title on the actual page."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:191
+#: ../inc/template-options/template-options-config.php:266
+#: ../inc/template-options/template-options-config.php:316
+msgid "Subtitle"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:192
+#: ../inc/template-options/template-options-config.php:267
+#: ../inc/template-options/template-options-config.php:317
+msgid ""
+"Enter text here to display it as the page subtitle below the page title."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:199
+msgid "Hide Feature Image"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:200
+msgid "Select this option to remove feature image from this page's gallery."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:208
+msgid "Client Name"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:209
+msgid "Enter the name of the client this portfolio item was produced for."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:216
+msgid "Project Date"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:217
+msgid "Enter the date to display for this project."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:224
+msgid "Portfolio Item URL"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:225
+msgid "Enter a URL to display a link on this portfolio item."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:241
+msgid "Page Options"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:250
+msgid "Hide Title"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:251
+msgid "Select this option to hide the page title."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:274
+#: ../inc/template-options/template-options-config.php:324
+msgid "Hide Featured Image"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:275
+#: ../inc/template-options/template-options-config.php:325
+msgid "Select to hide the feature image on this post."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:282
+msgid "Enable Slider"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:283
+msgid "Select this option to enable a slider on this page."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:290
+msgid "Select Slider"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:291
+msgid "Select which slider to display on this page."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:307
+msgid "Post Options"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:341
+msgid "Slide Options"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:350
+msgid "Slide Link"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:351
+msgid ""
+"Enter the URL of the page this slide will link to. A link is only added to "
+"slides with static images. Leave this field blank to not create a link on "
+"this slide."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:358
+msgid "Caption Line 1"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:359
+msgid "Enter the text to appear on the first line of this slides caption."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:366
+msgid "Caption Line 2"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:367
+msgid "Enter the text to appear on the second line of this slides caption."
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:382
+msgid "Profile Options"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:391
+msgid "Job Title"
+msgstr ""
+
+#: ../inc/template-options/template-options-config.php:392
+msgid "Enter this staff member's job title."
+msgstr ""
+
+#: ../inc/template-options/template-options.php:651
+msgid "Please Try Again"
+msgstr ""
+
+#: ../inc/template-options/template-options.php:670
+msgid "Remove Embed"
+msgstr ""
+
+#: ../inc/template-options/template-options.php:676
+#, php-format
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: ../inc/theme-options/options-framework.php:182
+#: ../inc/theme-options/options-framework.php:183
+#: ../inc/theme-options/options-framework.php:412
+msgid "Theme Options"
+msgstr ""
+
+#: ../inc/theme-options/options-framework.php:228
+msgid "Clear"
+msgstr ""
+
+#: ../inc/theme-options/options-framework.php:229
+msgid "Default"
+msgstr ""
+
+#: ../inc/theme-options/options-framework.php:230
+msgid "Select Color"
+msgstr ""
+
+#: ../inc/theme-options/options-framework.php:276
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: ../inc/theme-options/options-framework.php:308
+msgid "Default options restored."
+msgstr ""
+
+#: ../inc/theme-options/options-framework.php:362
+msgid "Options saved."
+msgstr ""
+
+#: ../inc/theme-options/options-media-uploader.php:51
+msgid "No file chosen"
+msgstr ""
+
+#: ../inc/theme-options/options-media-uploader.php:54
+#: ../inc/theme-options/options-media-uploader.php:113
+msgid "Upload"
+msgstr ""
+
+#: ../inc/theme-options/options-media-uploader.php:56
+#: ../inc/theme-options/options-media-uploader.php:114
+msgid "Remove"
+msgstr ""
+
+#: ../inc/theme-options/options-media-uploader.php:59
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: ../inc/theme-options/options-media-uploader.php:83
+msgid "View File"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:232
+msgid "No Repeat"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:233
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:234
+msgid "Repeat Vertically"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:235
+msgid "Repeat All"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:248
+msgid "Top Left"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:249
+msgid "Top Center"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:250
+msgid "Top Right"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:251
+msgid "Middle Left"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:252
+msgid "Middle Center"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:253
+msgid "Middle Right"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:254
+msgid "Bottom Left"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:255
+msgid "Bottom Center"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:256
+msgid "Bottom Right"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:269
+msgid "Scroll Normally"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:270
+msgid "Fixed in Place"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:344
+msgid "Normal"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:345
+msgid "Italic"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:346
+msgid "Bold"
+msgstr ""
+
+#: ../inc/theme-options/options-sanitize.php:347
+msgid "Bold Italic"
+msgstr ""
+
+#: ../inc/theme-options/options.php:38
+msgid "Envato API Settings"
+msgstr ""
+
+#: ../inc/theme-options/options.php:39
+msgid "Envato API settings used to enable theme updating."
+msgstr ""
+
+#: ../inc/theme-options/options.php:43
+msgid "Envato Username"
+msgstr ""
+
+#: ../inc/theme-options/options.php:44
+msgid "The Envato username of the account used to purchase the theme."
+msgstr ""
+
+#: ../inc/theme-options/options.php:50
+msgid "Envato API Key"
+msgstr ""
+
+#: ../inc/theme-options/options.php:51
+msgid "The API key of the account used to purchase the theme."
+msgstr ""
+
+#: ../inc/theme-options/options.php:60
+msgid "Appearance Settings"
+msgstr ""
+
+#: ../inc/theme-options/options.php:64
+msgid "Default Background Image"
+msgstr ""
+
+#: ../inc/theme-options/options.php:65
+msgid ""
+"Upload the image you wish to use as the default background for your website. "
+"Leave this option blank to use <a href='wp-admin/themes.php?page=custom-"
+"background'>WordPress custom background</a> as your default background. Once "
+"the image is uploaded click the \"Use This Image\" button."
+msgstr ""
+
+#: ../inc/theme-options/options.php:66
+msgid "Default background image"
+msgstr ""
+
+#: ../inc/theme-options/options.php:72
+msgid "Site Logo"
+msgstr ""
+
+#: ../inc/theme-options/options.php:73
+msgid ""
+"Upload or specify the file URL for the logo that will appear in your "
+"website's header (max width: 180px) e.g. (http://yoursite.com/logo.png)"
+msgstr ""
+
+#: ../inc/theme-options/options.php:74
+msgid "Site logo"
+msgstr ""
+
+#: ../inc/theme-options/options.php:80
+msgid "Custom Mobile Logo"
+msgstr ""
+
+#: ../inc/theme-options/options.php:81
+msgid ""
+"Upload or specify the file URL for the logo that will appear in your "
+"website's header on small screen devices (max width: 180px) e.g. (http://"
+"yoursite.com/logo.png)"
+msgstr ""
+
+#: ../inc/theme-options/options.php:87
+msgid "Custom Favicon"
+msgstr ""
+
+#: ../inc/theme-options/options.php:88
+msgid ""
+"Upload a 16px x 16px PNG/Gif image that will represent your website's "
+"favicon."
+msgstr ""
+
+#: ../inc/theme-options/options.php:94
+msgid "Apple Bookmark Icons"
+msgstr ""
+
+#: ../inc/theme-options/options.php:99
+msgid "Non Retina iPhones (57x57px)."
+msgstr ""
+
+#: ../inc/theme-options/options.php:104
+msgid "Retina iPhones (114x114px)."
+msgstr ""
+
+#: ../inc/theme-options/options.php:109
+msgid "Non Retina iPads (72x72px)."
+msgstr ""
+
+#: ../inc/theme-options/options.php:114
+msgid "Retina iPads (144x144px)."
+msgstr ""
+
+#: ../inc/theme-options/options.php:119 ../inc/theme-options/options.php:121
+msgid "Custom CSS"
+msgstr ""
+
+#: ../inc/theme-options/options.php:120
+msgid ""
+"Place any custom CSS above. This overrides any other stylesheets. Note this "
+"is intended for small pieces of CSS only. eg: a.button{color: #FFF}"
+msgstr ""
+
+#: ../inc/theme-options/options.php:127
+msgid "Blog Layout"
+msgstr ""
+
+#: ../inc/theme-options/options.php:128
+msgid ""
+"Select the blog page layout. \"Mosaic Grid\" arranges posts using the jQuery "
+"Masonry plugin."
+msgstr ""
+
+#: ../inc/theme-options/options.php:129
+msgid "Blog layout"
+msgstr ""
+
+#: ../inc/theme-options/options.php:131 ../inc/theme-options/options.php:140
+msgid "Mosaic Grid"
+msgstr ""
+
+#: ../inc/theme-options/options.php:131 ../inc/theme-options/options.php:140
+msgid "Traditional"
+msgstr ""
+
+#: ../inc/theme-options/options.php:136
+msgid "Archive Layout"
+msgstr ""
+
+#: ../inc/theme-options/options.php:137
+msgid ""
+"Select the post archive page layout. \"Mosaic Grid\" arranges posts using "
+"the jQuery Masonry plugin."
+msgstr ""
+
+#: ../inc/theme-options/options.php:138
+msgid "Archive layout"
+msgstr ""
+
+#: ../inc/theme-options/options.php:145
+msgid "Post Meta Options"
+msgstr ""
+
+#: ../inc/theme-options/options.php:150
+msgid "Show post author."
+msgstr ""
+
+#: ../inc/theme-options/options.php:151
+msgid "Show post author"
+msgstr ""
+
+#: ../inc/theme-options/options.php:157
+msgid "Show post date."
+msgstr ""
+
+#: ../inc/theme-options/options.php:158
+msgid "Show post date"
+msgstr ""
+
+#: ../inc/theme-options/options.php:164
+msgid "Show post category."
+msgstr ""
+
+#: ../inc/theme-options/options.php:165
+msgid "Show post category"
+msgstr ""
+
+#: ../inc/theme-options/options.php:171
+msgid "Show number of comments."
+msgstr ""
+
+#: ../inc/theme-options/options.php:172
+msgid "Show number of comments"
+msgstr ""
+
+#: ../inc/theme-options/options.php:178
+msgid "Show share links on posts."
+msgstr ""
+
+#: ../inc/theme-options/options.php:179
+msgid "Show share links on posts"
+msgstr ""
+
+#: ../inc/theme-options/options.php:185
+msgid "Show post tags."
+msgstr ""
+
+#: ../inc/theme-options/options.php:186
+msgid "Show post tags"
+msgstr ""
+
+#: ../inc/theme-options/options.php:195
+msgid "Colour Settings"
+msgstr ""
+
+#: ../inc/theme-options/options.php:199
+msgid "Colour Scheme"
+msgstr ""
+
+#: ../inc/theme-options/options.php:200
+msgid "Select a colour scheme."
+msgstr ""
+
+#: ../inc/theme-options/options.php:201
+msgid "Colour scheme"
+msgstr ""
+
+#: ../inc/theme-options/options.php:203
+msgid "Dark"
+msgstr ""
+
+#: ../inc/theme-options/options.php:203
+msgid "Light"
+msgstr ""
+
+#: ../inc/theme-options/options.php:208
+msgid "Links"
+msgstr ""
+
+#: ../inc/theme-options/options.php:209
+msgid "Link text colour."
+msgstr ""
+
+#: ../inc/theme-options/options.php:210
+msgid "Link text colour"
+msgstr ""
+
+#: ../inc/theme-options/options.php:216
+msgid "Link text hover colour."
+msgstr ""
+
+#: ../inc/theme-options/options.php:217
+msgid "Link text hover colour"
+msgstr ""
+
+#: ../inc/theme-options/options.php:223
+msgid "Buttons"
+msgstr ""
+
+#: ../inc/theme-options/options.php:224
+msgid "Button background colour."
+msgstr ""
+
+#: ../inc/theme-options/options.php:225
+msgid "Button background colour"
+msgstr ""
+
+#: ../inc/theme-options/options.php:231
+msgid "Button text colour."
+msgstr ""
+
+#: ../inc/theme-options/options.php:232
+msgid "Button text colour"
+msgstr ""
+
+#: ../inc/theme-options/options.php:240
+msgid "Contact Settings"
+msgstr ""
+
+#: ../inc/theme-options/options.php:244
+msgid "Contact Form Address"
+msgstr ""
+
+#: ../inc/theme-options/options.php:245
+msgid "Enter the email address that contact form submissions should be sent to"
+msgstr ""
+
+#: ../inc/theme-options/options.php:255
+msgid "Address"
+msgstr ""
+
+#: ../inc/theme-options/options.php:256
+msgid "Enter the address to be displayed on the contact page template"
+msgstr ""
+
+#: ../inc/theme-options/options.php:262
+msgid "Telephone Number"
+msgstr ""
+
+#: ../inc/theme-options/options.php:263
+msgid "Enter the telephone number to be displayed on the contact page template"
+msgstr ""
+
+#: ../inc/theme-options/options.php:269
+msgid "Mobile Telephone Number"
+msgstr ""
+
+#: ../inc/theme-options/options.php:270
+msgid ""
+"Enter the mobile telephone number to be displayed on the contact page "
+"template"
+msgstr ""
+
+#: ../inc/theme-options/options.php:276
+msgid "Fax Number"
+msgstr ""
+
+#: ../inc/theme-options/options.php:277
+msgid "Enter the fax number to be displayed on the contact page template"
+msgstr ""
+
+#: ../inc/theme-options/options.php:283
+msgid "Website URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:284
+msgid "Enter the website URL to be displayed on the contact page template"
+msgstr ""
+
+#: ../inc/theme-options/options.php:290
+msgid "Email Address"
+msgstr ""
+
+#: ../inc/theme-options/options.php:291
+msgid "Enter the email address to be displayed on the contact page template"
+msgstr ""
+
+#: ../inc/theme-options/options.php:299
+msgid "Footer Settings"
+msgstr ""
+
+#: ../inc/theme-options/options.php:303 ../inc/theme-options/options.php:305
+msgid "Footer Text"
+msgstr ""
+
+#: ../inc/theme-options/options.php:304
+msgid "Enter the text shown below copyright symbol in the footer"
+msgstr ""
+
+#: ../inc/theme-options/options.php:313
+msgid "jQuery Plugin Settings"
+msgstr ""
+
+#: ../inc/theme-options/options.php:317
+msgid "Smooth Scroll"
+msgstr ""
+
+#: ../inc/theme-options/options.php:318
+msgid "Select to enable Smooth Scroll jQuery plugin."
+msgstr ""
+
+#: ../inc/theme-options/options.php:324
+msgid "Colorbox"
+msgstr ""
+
+#: ../inc/theme-options/options.php:325
+msgid "Select to open portfolio items in colorbox."
+msgstr ""
+
+#: ../inc/theme-options/options.php:331
+msgid "Use theme styling for colorBox window."
+msgstr ""
+
+#: ../inc/theme-options/options.php:341
+msgid "Social Networks"
+msgstr ""
+
+#: ../inc/theme-options/options.php:345
+msgid "AddThis Profile ID"
+msgstr ""
+
+#: ../inc/theme-options/options.php:346
+msgid "Enter your AddThis (http://www.addthis.com/) Profile ID here"
+msgstr ""
+
+#: ../inc/theme-options/options.php:356
+msgid "Twitter profile URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:357
+msgid "Twitter URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:362
+msgid "Facebook profile URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:363
+msgid "Facebook URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:368
+msgid "Google+ profile URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:369
+msgid "Google+ URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:374
+msgid "Dribbble profile URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:375
+msgid "Dribbble URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:380
+msgid "LinkedIn profile URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:381
+msgid "LinkedIn URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:386
+msgid "YouTube channel URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:387
+msgid "YouTube URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:392
+msgid "Vimeo profile URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:393
+msgid "Vimeo URL"
+msgstr ""
+
+#: ../inc/theme-options/options.php:411
+msgid "Appearance"
+msgstr ""
+
+#: ../inc/theme-options/options.php:617
+msgid "Footer"
+msgstr ""
+
+#: ../inc/theme-options/options.php:637
+msgid "Social Networks Links"
+msgstr ""

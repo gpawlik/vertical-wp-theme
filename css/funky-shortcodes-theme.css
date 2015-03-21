@@ -1,0 +1,118 @@
+/*	Toggle / Accordion
+	================================================== */
+	
+	.funky-toggle-item {
+		border-bottom: 1px solid #EEE; 
+		margin-top: 20px; 
+	}
+	
+	.funky-toggle-item:hover { border-bottom: 1px solid #CCC; }
+
+	.funky-toggle-item + .funky-toggle-item { margin: 0; }
+	
+		.funky-toggle-button { position: relative; }
+		
+			.funky-toggle-title:before { 
+				color: #EEE;
+				content: "+";
+				font-size: 34px;
+				left: 0;
+				position: absolute;			
+			}
+			
+			.close .funky-toggle-title:before {
+				content: "-";
+			}
+			
+			.funky-toggle-title {
+				font-size: 1em;
+				font-weight: 700;
+				letter-spacing: 0;
+				line-height: 24px;
+				padding: 7px 0 7px 30px;
+			}
+			
+
+/*	Divider
+	================================================== */			
+
+hr, .hr {
+	border-bottom: 1px dotted #CCC;
+	margin: 40px 0 0;
+}
+
+hr.thick { border-bottom: 4px solid #44464A; }
+
+.top {
+    font-size: 0.833em;
+    line-height: 10px;
+    position: relative;
+    text-align: right;
+    width: 92%;
+}
+
+    .top a {
+        color: #999 !important;
+        display: block;
+        height: 20px;
+        padding-left: 17px;
+        position: absolute;
+        right: -40px;
+        top: -5px;
+        width: 20px;
+    }
+
+    .top a:hover {    color: #666 !important }
+
+	
+/*	Dropcap
+	================================================== */
+	
+.funky-dropcap:first-letter {
+	color: #333; 
+	padding: 5px 20px 5px 0;
+}
+
+
+/*	Highlight
+	================================================== */
+
+.funky-highlight {
+    background-color: #FFFF00;
+    color: #111;
+	display: inline-block;
+    padding: 5px;
+}
+
+
+/*	Pages
+	================================================== */
+
+.funky-pages-item { margin-top: 20px; }
+
+.funky-pages-item h3 {
+	font-size: 1.167em;
+	letter-spacing: 0;
+}
+
+.funky-pages-image { margin-top: 20px; }
+
+
+/*	Posts
+	================================================== */	
+
+.funky-posts { margin: 20px 0 0; }
+	
+	.funky-posts article + article { margin: 10px 0 0; }
+		
+		.funky-posts a { display: inline-block; }
+		
+		.funky-posts a:after { content: " \2192"; }
+		
+		.post-date { display: block; }
+
+
+/*	Quote
+	================================================== */
+	
+blockquote.alignleft, blockquote.alignright { padding: 20px; }
