@@ -720,10 +720,13 @@ function funky_register_sidebars() {
 
 	// "Sidebar Name" => "Description"
 	$funky_sidebars = array(
-		__( 'Page Sidebar', 'raw_theme' )		=> __( 'Sidebar used on pages.', 'raw_theme' ),
+		__( 'Page Sidebar', 'raw_theme' )	=> __( 'Sidebar used on pages.', 'raw_theme' ),
 		__( 'Home Page Sidebar', 'raw_theme' )	=> __( 'Sidebar used on home page template.', 'raw_theme' ),
-		__( 'Post Sidebar', 'raw_theme' )		=> __( 'Sidebar used on blog index, archives, search page and posts.', 'raw_theme' ),
-		__( 'Portfolio Sidebar', 'raw_theme' )	=> __( 'Sidebar used on portfolio index and portfolio items.', 'raw_theme' )
+		__( 'Post Sidebar', 'raw_theme' )	=> __( 'Sidebar used on blog index, archives, search page and posts.', 'raw_theme' ),
+		__( 'Portfolio Sidebar', 'raw_theme' )	=> __( 'Sidebar used on portfolio index and portfolio items.', 'raw_theme' ),
+                __( 'Footer Left', 'raw_theme' )	=> __( 'Footer sidebar left column', 'raw_theme' ),
+                __( 'Footer Center', 'raw_theme' )	=> __( 'Footer sidebar center column', 'raw_theme' ),
+                __( 'Footer Right', 'raw_theme' )	=> __( 'Footer sidebar right column', 'raw_theme' ),
 	);
 	
 	foreach ( $funky_sidebars as $sidebar_name => $sidebar_desc ) {
@@ -1233,7 +1236,7 @@ function gp_list_child_pages($atts) {
     $a = shortcode_atts( array(
         'title'  => '',
         'parent' => '',
-        'limit'  => 3,
+        'limit'  => -1,
         'grid'   => '1-3'
     ), $atts);
     

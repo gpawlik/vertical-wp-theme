@@ -235,9 +235,9 @@ body {
     font-size: 1em;
     line-height: 1.4em;
     padding: 40px 20px 0;
-	position: relative;
+    position: fixed;
     width: 180px;
-	z-index: 2;
+    z-index: 2;
 }
 
 	#sidebar header { position: relative; }
@@ -333,12 +333,9 @@ a#logo {
 /* ----- FOOTER ----- */
 
 #footer {
-    background-color: #0F1012;
-    clear: left;
-    float: left;
+    background-color: #333;
     margin: 0;
     padding: 1px 20px 20px;
-    width: 180px;
 }
 
 .widget-sidebar { margin: 0 0 40px }
@@ -348,17 +345,16 @@ a#logo {
     margin: 40px 0 0;
 }
 
-    .copyright span {
-        clear: both;
-        display: block;
-    }
+.copyright span {
+    clear: both;
+    display: block;
+}
 
 /* ----- CONTENT ----- */
 
 #content-wrapper {
     float: right;
-    width: 816px;
-    padding-bottom: 80px;
+    width: 816px;    
     position: relative;
     z-index: 1;
 }
