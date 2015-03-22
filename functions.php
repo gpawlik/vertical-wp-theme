@@ -106,6 +106,7 @@ function funky_theme_setup() {
 	add_theme_support( 'post-thumbnails' );	
 	set_post_thumbnail_size( 150, 150, false ); 			# gallery (doesn't work)
 	add_image_size( 'dashboard', 150, 90, true ); 			# Dashboard
+        add_image_size( 'listing', 300, 200, true ); 			# Listing
 	add_image_size( 'thumbnail-post', 480, 999, false );	# Post archive feature images
 	add_image_size( 'thumbnail-portfolio', 480, 320, true );# Portfolio archive feature images
 	
@@ -1177,6 +1178,19 @@ function funky_register_required_plugins() {
 
 }
 
+/* Get clean post thumbnail */
+function gp_get_thumnail($post_id, $thumbnail_name) {
+    $thumb_id  = get_post_thumbnail_id($post_id);
+    if(!empty($thumb_id)) {
+        $thumb_array = wp_get_attachment_image_src($thumb_id, $thumbnail_name, true); 
+        $thumb_url = $thumb_array[0];
+    }
+    else {
+        $thumb_url = '';
+    }  
+    return $thumb_url;
+}
+
 
 /* SHORTCODES */
 /**************/
@@ -1201,15 +1215,18 @@ add_shortcode( 'image_box', 'gp_image_with_caption' );
 
 function gp_recent_posts($atts) {
     $a = shortcode_atts( array(
-        'title' => '',
-        'posts' => 3,
-        'grid'  => '1-3'
+        'title'    => '',
+        'subtitle' => '',
+        'posts'    => 3,
+        'grid'     => '1-3'
     ), $atts);
 
     $title = (!empty($a['title'])) ? '<h3>' . $a['title'] . '</h3>' : '';
+    $subtitle = (!empty($a['subtitle'])) ? '<p class="gp-section-subtitle">' . $a['subtitle'] . '</p>' : '';
 
-    $output = $title;
-    $output .= '<ul>';
+    $output  = $title;
+    $output .= $subtitle;
+    $output .= '<ul class="gp-listing gp-listing-posts clearfix">';
     
     query_posts(
         array(
@@ -1220,7 +1237,12 @@ function gp_recent_posts($atts) {
     );
     if (have_posts()) :
         while (have_posts()) : the_post();
-            $output .= '<li class="gp-grid-' . $a['grid'] . '"><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+            $output .= '<li class="gp-grid-' . $a['grid'] . '">' .
+                           '<a href="' . get_permalink() . '" class="gp-listing-image" style="background-image:url(' . gp_get_thumnail(get_the_ID(), 'listing') . ')"></a>' .
+                           '<div class="gp-listing-text">' . 
+                               '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' . 
+                           '</div>' . 
+                       '</li>';
         endwhile;
     endif;
     
@@ -1234,10 +1256,11 @@ add_shortcode('recent_posts', 'gp_recent_posts');
 
 function gp_list_child_pages($atts) {
     $a = shortcode_atts( array(
-        'title'  => '',
-        'parent' => '',
-        'limit'  => -1,
-        'grid'   => '1-3'
+        'title'    => '',
+        'subtitle' => '',
+        'parent'   => '',
+        'limit'    => -1,
+        'grid'     => '1-3'
     ), $atts);
     
     $posts_array = get_posts(
@@ -1250,11 +1273,18 @@ function gp_list_child_pages($atts) {
     );         
     
     $title = (!empty($a['title'])) ? '<h3>' . $a['title'] . '</h3>' : '';
+    $subtitle = (!empty($a['subtitle'])) ? '<p class="gp-section-subtitle">' . $a['subtitle'] . '</p>' : '';
     
-    $output = $title;
-    $output .= '<ul>';    
-    foreach($posts_array as $post) {
-        $output .= '<li><a href="' . get_permalink($post->ID) . '">' . $post->post_title . '</a></li>';
+    $output  = $title;
+    $output .= $subtitle;
+    $output .= '<ul class="gp-listing gp-listing-posts clearfix">';    
+    foreach($posts_array as $post) {                 
+        $output .= '<li class="gp-grid-' . $a['grid'] . '">' .
+                       '<a href="' . get_permalink($post->ID) . '" class="gp-listing-image" style="background-image:url(' . gp_get_thumnail($post->ID, 'listing') . ')"></a>' .
+                       '<div class="gp-listing-text">' . 
+                           '<a href="' . get_permalink($post->ID) . '">' . $post->post_title . '</a>' . 
+                       '</div>' . 
+                   '</li>';        
     }
     $output .= '</ul>';    
 
