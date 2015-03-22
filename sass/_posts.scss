@@ -1,0 +1,231 @@
+/* ----------------------------------------
+    POSTS
+---------------------------------------- */
+.post-scroll-holder {
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:80px
+}
+
+.post-scroll-holder span {
+    display:inline-block;
+    float:right
+}
+
+.post-scroll-holder a {
+    display:block;
+    height:40px;
+    width:40px
+}
+
+.prev-post-link a {
+    background:url(images/colorbox-controls.png) no-repeat -80px 0
+}
+
+.prev-post-link a:hover {
+    background:url(images/colorbox-controls.png) no-repeat -80px -40px
+}
+
+.next-post-link a {
+    background:url(images/colorbox-controls.png) no-repeat -40px 0
+}
+
+.next-post-link a:hover {
+    background:url(images/colorbox-controls.png) no-repeat -40px -40px
+}
+
+/* ----- Media players (YouTube, vimeo, embed)----- */
+p + video,p + .rve-embed-container {
+    margin-top:40px
+}
+
+.audio-container,.video-container {
+    margin:40px auto;
+    position:relative;
+    overflow:hidden
+}
+
+.audio-container {
+    margin-left:40px;
+    margin-right:40px
+}
+
+#two-column-gallery .video-container {
+    margin:10px auto 0
+}
+
+.wp-video-shortcode {
+    max-width:100%
+}
+
+.wp-audio-shortcode {
+    max-width:100%
+}
+
+/* ----- MediaElemets Player ----- */
+.mejs-audio {
+    margin:40px auto 20px
+}
+
+.mejs-container .mejs-controls {
+    background:#0F1012!important
+}
+
+.page-content .mejs-audio,#two-column-gallery .mejs-audio {
+    margin:40px auto
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+    background:#999!important
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-current,.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+    background:#F57A30!important
+}
+
+.mejs-time-rail {
+    width:65%!important
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-total {
+    margin:5px 2%!important;
+    width:61%!important
+}
+
+.mejs-button.mejs-volume-button,.mejs-button.mejs-fullscreen-button {
+    float:right!important
+}
+
+/* ----- STATUS ----- */
+.timestamp {
+    color:#999;
+    display:block;
+    margin:20px 0 0
+}
+
+.twitter-tweet-rendered {
+    border:none!important;
+    box-shadow:none!important;
+    margin:0 auto!important;
+    max-width:100%!important
+}
+
+.standalone-tweet {
+    padding:0!important;
+    background:transparent!important
+}
+
+/* ----- POST META ----- */
+.post-meta ul {
+    color:#fff;
+    font-size:.833em;
+}
+.post-meta ul a {
+    color:#fff;
+}
+
+.format-video .post-meta ul {
+    padding-bottom:0
+}
+
+aside.post-meta ul li {
+    float:left;
+    padding:5px 0;
+}
+
+aside.post-meta ul li:first-child {
+    border:none
+}
+
+.gallery-image-link {
+    display:block;
+    line-height:0;
+    margin:0 0 10px;
+    position:relative
+}
+
+.gallery-image-link:first-child {
+    margin:20px 0 10px
+}
+
+#two-column-gallery a img {
+    margin:0
+}
+
+.image-hover-icon {
+    background:url(images/zoom-icon.jpg) 0 0 no-repeat;
+    height:40px;
+    position:absolute;
+    right:0;
+    visibility:hidden;
+    width:40px
+}
+
+/* ----- AUTHOR META ----- */
+.author-meta img {
+    padding:0 10px 0 0;
+    float:left
+}
+
+.share {
+    position:relative
+}
+
+/* ----- ADDTHIS ----- */
+.share-holder {
+    background:url(images/share-holder-bg.png) no-repeat;
+    display:none;
+    float:left;
+    left:-20px;
+    padding:12px 0 0;
+    position:absolute;
+    top:20px;
+    z-index:999
+}
+
+.addthis_toolbox {
+    background:#44464A;
+    padding:10px;
+    width:100px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px
+}
+
+#wrapper .wp-post-image {
+    height:auto;
+    margin-top:0;
+    width:100%
+}
+
+#wrapper .post-meta + .wp-post-image {
+    margin-top:40px
+}
+
+/* ----- TAGS ----- */
+.post-tags {
+    border-top:4px solid #44464A;
+    clear:both;
+    line-height:18px;
+    margin:40px 0 0;
+    padding:18px 0 0
+}
+
+.tag-icon {
+    background:url(images/tag-icon.png) no-repeat;
+    display:block;
+    float:left;
+    height:24px;
+    margin:0 10px 0 0;
+    width:24px
+}
+
+.post-tags a {
+    border:1px solid #EEE;
+    color:#737373;
+    display:inline-block;
+    font-size:1em;
+    margin-top:2px;
+    padding:2px 5px
+}

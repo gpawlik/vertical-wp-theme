@@ -1,0 +1,145 @@
+/* ----------------------------------------
+    COMMENTS
+---------------------------------------- */
+#comments-holder {
+    border-top:4px solid #44464A;
+    clear:both;
+    margin:40px 0 0
+}
+
+.post-tags + .clearboth + #comments-holder {
+    border-top:1px dotted #CCC;
+    margin:20px 0 0
+}
+
+#comments {
+    clear:both;
+    margin:20px 0 0;
+    padding:0
+}
+
+#comments li {
+    list-style:none;
+    padding:0;
+    margin:0
+}
+
+.comment {
+    background:url(images/comment-thread-horizontal.png) repeat-y;
+    width:100%
+}
+
+.comment .comment {
+    background:url(images/comment-thread-vertical.png) no-repeat
+}
+
+.comment .children .children {
+    background:url(images/comment-thread-horizontal-2.png) repeat-y
+}
+
+.comment .comment .comment {
+    background:url(images/comment-thread-vertical-2.png) no-repeat
+}
+
+/* FIRST LEVEL */
+.comment-holder {
+    background:#FFF;
+    border:1px solid #EEE;
+    float:right;
+    margin:0 0 20px;
+    overflow:hidden;
+    position:relative;
+    width:100%
+}
+
+/* SECOND LEVEL */
+.children .comment-holder {
+    width:85%
+}
+
+/* THIRD LEVEL */
+.children .children .comment-holder {
+    width:77%
+}
+
+.admin_comment {
+    background-color:#F6F6F6
+}
+
+.comment .avatar {
+    border:1px solid #EEE;
+    left:10px;
+    padding:3px;
+    position:absolute;
+    top:10px
+}
+
+#comments .comment small a {
+    color:#999;
+    border-bottom:1px dotted transparent
+}
+
+#comments .comment small a:hover {
+    color:#3297FD
+}
+
+.author-text {
+    padding:10px 10px 10px 95px
+}
+
+.author-text small {
+    float:right;
+    margin-top:4px
+}
+
+.author-text h6 {
+    float:left;
+    font-size:1em;
+    font-weight:700;
+    margin:5px 0 10px
+}
+
+.author-text h6 span {
+    color:#999;
+    font-size:.833em;
+    font-weight:400
+}
+
+.author-text h6 a {
+    color:#999;
+    border-bottom:1px dotted transparent
+}
+
+.author-text h6 a:hover {
+    color:#3297FD
+}
+
+.the-comment {
+    border-top:1px solid #EEE;
+    clear:both;
+    margin:20px 0 0
+}
+
+.the-comment p {
+    margin:10px 0 20px
+}
+
+#comments .comment-reply-link {
+    color:#999;
+    float:right;
+    font-size:.833em;
+    margin:0 0 5px
+}
+
+#comments .comment-reply-link:hover {
+    color:#3297FD
+}
+
+#comments #respond {
+    background-color:#FFF;
+    padding:0 0 40px
+}
+
+#reply-title {
+    margin:20px 0 0
+}

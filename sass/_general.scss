@@ -1,0 +1,511 @@
+/* ----------------------------------------
+    STYLING
+---------------------------------------- */
+.displace,.screen-reader-text {
+    display:none
+}
+
+/* ------ LISTINGS ------ */
+.page-content ul.gp-listing,.post-content ul.gp-listing {
+    margin:0 0 20px;
+    padding:0;
+    list-style-type:none;
+    li {
+        padding:0;
+        background:none
+    }
+}
+ul.gp-listing-posts {
+    .gp-listing-image {
+        display:block;
+        height:170px;
+        @include background-size(cover);
+        background-position:center;
+        background-color:$default-color;
+    }
+    .gp-listing-text {
+        text-align:center;
+        padding:5px 10px;
+        min-height:70px;
+    }
+}
+
+/* ----- QUOTES ----- */
+blockquote {
+    background:#F6F6F6;
+    border-left:4px solid #CCC;
+    box-sizing:border-box;
+    margin-top:20px;
+    padding:20px
+}
+
+#blog-grid blockquote {
+    margin:0
+}
+
+blockquote p:first-child {
+    margin-top:0
+}
+
+#blog-grid cite {
+    display:block;
+    text-align:right
+}
+
+h1 cite {
+    float:none
+}
+
+abbr {
+    border-bottom:1px dotted #444;
+    color:#444;
+    cursor:pointer
+}
+
+small {
+    font-size:.833em
+}
+
+pre {
+    background-color:#F6F6F6;
+    font-size:12px;
+    margin:20px 0;
+    padding:10px;
+    white-space:pre-wrap;
+/* css-3 */
+    white-space:-moz-pre-wrap;
+/* Mozilla, since 1999 */
+    white-space:-pre-wrap;
+/* Opera 4-6 */
+    white-space:-o-pre-wrap;
+/* Opera 7 */
+    word-wrap:break-word
+/* Internet Explorer 5.5+ */
+}
+
+code {
+    font-size:1em
+}
+
+/* ----- LISTS ----- */
+.page-content ul,.post-content ul {
+    margin:20px 0 0
+}
+
+.page-content ul li,.post-content ul li {
+    background:url(images/li.png) 0 6px no-repeat;
+    padding:10px 0 0 22px
+}
+
+.page-content li ul,.post-content li ul {
+    margin:0
+}
+
+.page-content ul ol li,.post-content ul ol li {
+    background:none
+}
+
+.page-content ol,.post-content ol {
+    margin:20px 0 0 16px;
+    padding-left:20px
+}
+
+.page-content ol li,.post-content ol li {
+    list-style-type:decimal;
+    padding:10px 0 0 3px
+}
+
+.page-content li ol,.post-content li ol {
+    margin:0
+}
+
+.page-content ol ul li,.post-content ol ul li {
+    background:url(images/li.png) 0 6px no-repeat;
+    list-style-type:none;
+    margin:0 0 0 -2px;
+    padding:10px 0 0 22px
+}
+
+/* ----- TABLES ----- */
+.page-content table {
+    background-color:#F9F9F9;
+    border:4px solid #DDD;
+    border-collapse:collapse;
+    color:#555;
+    margin:20px 0 0;
+    width:100%;
+    word-wrap:break-word
+}
+
+.page-content th {
+    background-color:#F0F0F0;
+    padding:10px 0
+}
+
+.page-content tr:nth-of-type(odd) {
+    background-color:#F0F0F0
+}
+
+.page-content td {
+    border-top:1px solid #DDD;
+    border-left:1px solid #DDD;
+    padding:5px
+}
+
+/* ----- IMAGES ----- */
+#wrapper img {
+    height:auto;
+    max-width:100%
+}
+
+.aligncenter {
+    display:block;
+    margin:20px auto
+}
+
+.alignleft {
+    float:left;
+    margin:0 20px 10px 0
+}
+
+.alignright {
+    float:right;
+    margin:0 0 10px 20px
+}
+
+.wp-caption {
+    margin-top:18px
+}
+
+img.alignleft,img.alignright,img.aligncenter,.wp-caption img {
+    background-color:#F6F6F6;
+    padding:5px
+}
+
+/* Images */
+.page-content img {
+    height:auto;
+    max-width:100%
+/* Fluid images for posts, comments, and widgets */
+}
+
+img[class*="align"],img[class*="wp-image-"] {
+    height:auto
+/* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+img.size-full {
+    max-width:726px;
+    width:auto
+/* Prevent stretching of full-size images with height and width attributes in IE8 */
+}
+
+/* ==================================================
+   GALLERY SHORTCODE
+   ================================================== */
+.gallery {
+    margin:40px 0;
+    overflow:hidden
+}
+
+.gallery .gallery-item {
+    float:left;
+    overflow:hidden;
+    position:relative
+}
+
+.gallery img {
+    display:block;
+    height:auto;
+    max-width:100%
+}
+
+.gallery-columns-1 .gallery-item {
+    width:100%
+}
+
+.gallery-columns-2 .gallery-item {
+    width:50%
+}
+
+.gallery-columns-3 .gallery-item {
+    width:33.333%
+}
+
+.gallery-columns-4 .gallery-item {
+    width:25%
+}
+
+.gallery-columns-5 .gallery-item {
+    width:20%
+}
+
+.gallery-columns-6 .gallery-item {
+    width:16.666%
+}
+
+.gallery-columns-7 .gallery-item {
+    width:14.285%
+}
+
+.gallery-columns-8 .gallery-item {
+    width:12.5%
+}
+
+.gallery-columns-9 .gallery-item {
+    width:11.111%
+}
+
+.gallery-item a {
+    display:block;
+    text-align:center
+}
+
+.gallery-item a:hover {
+    -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+    zoom:1;
+    filter:alpha(opacity=65);
+    opacity:.65
+}
+
+.wp-caption-text,.gallery-caption {
+    font-size:.833em;
+    margin:0;
+    padding:5px
+}
+
+.gallery-caption {
+    background:#F6F6F6
+}
+
+/* ===[ Disable captions when columns are too narrow ]=== */
+.gallery-columns-5 .gallery-caption,.gallery-columns-6 .gallery-caption,.gallery-columns-7 .gallery-caption,.gallery-columns-8 .gallery-caption,.gallery-columns-9 .gallery-caption {
+    display:none
+}
+
+/* ----------------------------------------
+    WIDGETS
+---------------------------------------- */
+.widget {
+    border-top:1px dotted #222;
+    margin:0 0 20px;
+    padding-top:20px
+}
+
+.widgettitle {
+    border:none;
+    color:#FFF;
+    margin:0 0 20px;
+    padding:0
+}
+
+.widget-sidebar .widgettitle a {
+    color:#FFF
+}
+
+.widget-sidebar .widgettitle a:hover {
+    color:#CCC
+}
+
+.widget ul li {
+    margin:6px 0 0
+}
+
+.widget .children,.widget .sub-menu {
+    padding-left:20px
+}
+
+/* ----- CALENDAR ----- */
+#wp-calendar {
+    width:100%
+}
+
+#wp-calendar caption {
+    font-weight:700
+}
+
+/* ----- RECENT COMMNETS -----*/
+.recentcomments a {
+    display:block
+}
+
+/* ----- CONTACT ----- */
+#content .raw_contact_holder {
+    margin:20px 0 0
+}
+
+.raw_contact_holder span {
+    display:block;
+    margin-top:5px;
+    min-height:24px;
+    padding-left:30px
+}
+
+.contact_address {
+    background:url(images/address_icon.png) 5px 2px no-repeat
+}
+
+.contact_phone {
+    background:url(images/phone_icon.png) 5px 2px no-repeat
+}
+
+.contact_mobile {
+    background:url(images/mobile_icon.png) 5px 2px no-repeat
+}
+
+.contact_fax {
+    background:url(images/fax_icon.png) 5px 2px no-repeat
+}
+
+.contact_website {
+    background:url(images/website_icon.png) 5px 2px no-repeat
+}
+
+.contact_email {
+    background:url(images/email_icon.png) 5px 2px no-repeat
+}
+
+/* ----- RSS ----- */
+.rsswidget,.rss-date,.rssSummary {
+    display:block;
+    margin-bottom:5px
+}
+
+.widget_rss cite {
+    display:block;
+    float:none;
+    text-align:right
+}
+
+/* ----- SOCIAL ----- */
+.social-button-holder {
+    border-top:1px dotted #222;
+    display:block;
+    padding:15px 0 20px;
+    overflow:hidden;
+    text-align:center;
+    width:182px
+}
+
+.social-button-holder a {
+    display:inline-block;
+    height:24px;
+    margin:5px 5px 0 0;
+    overflow:hidden;
+    text-indent:9999px;
+    width:24px
+}
+
+#sidebar .social-button-holder a:hover {
+    border:none
+}
+
+/* SOCIAL BUTTONS */
+.facebook-button {
+    background:url(images/social/facebook.png) no-repeat
+}
+
+.twitter-button {
+    background:url(images/social/twitter.png) no-repeat
+}
+
+.google-button {
+    background:url(images/social/google.png) no-repeat
+}
+
+.dribbble-button {
+    background:url(images/social/dribbble.png) no-repeat
+}
+
+.linkedin-button {
+    background:url(images/social/linkedin.png) no-repeat
+}
+
+.vimeo-button {
+    background:url(images/social/vimeo.png) no-repeat
+}
+
+.youtube-button {
+    background:url(images/social/youtube.png) no-repeat
+}
+
+/* IE7 Fix */
+.ie7 .social-button-holder {
+    padding:15px 0 20px
+}
+
+.ie7 .social-button-holder a {
+    float:left
+}
+
+/* ----- SEARCH ----- */
+.searchform {
+    overflow:hidden;
+    border:1px solid #222
+}
+
+.searchform fieldset {
+    position:relative
+}
+
+#footer .searchform input[type="text"] {
+    border:none;
+    box-sizing:border-box;
+    float:left;
+    height:24px;
+    line-height:24px;
+    margin:0;
+    padding:0 29px 0 5px;
+    width:100%
+}
+
+#footer .searchform .searchsubmit {
+    background:#44464A url(images/search-button.png) no-repeat;
+    border-bottom:none;
+    border-radius:0;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    display:block;
+    font-size:0;
+    height:24px;
+    line-height:0;
+    margin:0;
+    padding:0;
+    position:absolute;
+    right:0;
+    text-indent:-999px;
+    text-shadow:none;
+    width:26px
+}
+
+#footer .searchform .searchsubmit:hover {
+    background:#44464A url(images/search-button.png) no-repeat bottom left
+}
+
+/* ----- TWITTER ----- */
+.raw_twitter {
+    overflow:hidden
+}
+
+.raw_twitter li {
+    display:block;
+    overflow:hidden
+}
+
+.raw_twitter span {
+    display:block;
+    margin-bottom:5px
+}
+
+.raw_twitter .timestamp {
+    float:left;
+    margin:0 0 10px
+}
+
+.raw_twitter .twitter-link {
+    display:block;
+    float:right;
+    text-align:right
+}

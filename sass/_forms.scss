@@ -1,0 +1,83 @@
+/* ----------------------------------------
+    FORMS
+---------------------------------------- */
+.page-content form ul li,#footer form ul li {
+    background:none;
+    margin:0 0 20px;
+    padding:0
+}
+
+input[type="text"],input[type="password"],textarea {
+    background-color:#F6F6F6;
+    border:1px solid #DDD;
+    display:block;
+    font-weight:400;
+    margin:0 0 20px;
+    padding:6px 4px
+}
+
+textarea {
+    font-family:helvetica,arial,sans-serif
+}
+
+input[type="checkbox"] {
+    float:left
+}
+
+#respond {
+    margin:20px auto 0
+}
+
+p + #respond {
+    margin-top:40px
+}
+
+label {
+    display:inline-block;
+    margin:0 0 5px
+}
+
+input[type="radio"] {
+    color:#444;
+    margin:0 10px 5px 0
+}
+
+select {
+    background-color:#F6F6F6;
+    border:1px solid #DDD;
+    padding:2px;
+    width:100%
+}
+
+input[type="text"],input[type="password"],textarea {
+    box-sizing:border-box;
+    width:100%
+}
+
+textarea {
+    height:100px;
+    resize:none
+}
+
+input[type="checkbox"] {
+    height:13px;
+    margin:1px 5px 0 0;
+    width:13px
+}
+
+input.error,textarea.error {
+    border:1px solid red
+}
+
+label.error {
+    color:red
+}
+
+/* ----------------------------------------
+    SIDEBAR FORMS
+---------------------------------------- */
+.widget-sidebar input[type="text"],.widget-sidebar input[type="password"],.widget-sidebar textarea,.widget-sidebar select,#sidebar select {
+    background-color:#44464A;
+    border:1px solid #222;
+    color:#999
+}

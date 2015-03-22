@@ -1,0 +1,159 @@
+/* ----------------------------------------
+    BLOG INDEX (TRADITIONAL LAYOUT)
+---------------------------------------- */
+.blog-traditional article {
+    margin:0 40px 40px;
+    overflow:hidden
+}
+
+.blog-traditional article + article {
+    border-top:1px dotted #CCC
+}
+
+.blog-traditional-header {
+    background:$default-color;
+}
+
+.blog-traditional-thumbnail {
+    display:block;
+    line-height:0;
+    position:relative
+}
+
+.blog-traditional h2 {
+    border:none;
+    font-size:2em;
+    font-weight:400;
+    letter-spacing:-1px;
+    padding:0
+}
+
+.blog-traditional .post-meta ul {
+    padding:15px 20px;
+}
+
+.blog-traditional .post-meta ul li {
+    display:block;
+    width:100%;
+    font-size:16px;
+}
+.blog-traditional .post-meta ul li span {
+    margin-right:8px;
+    width:20px;
+}
+
+#content .pagination {
+    background:none;
+    margin-right:40px
+}
+
+/* ----------------------------------------
+    BLOG INDEX (MOSAIC)
+---------------------------------------- */
+#blog-grid {
+    overflow:hidden;
+    width:826px
+}
+
+#blog-grid article {
+    background-color:#FFF;
+    float:left;
+    font-size:1em;
+    line-height:1.4em;
+    margin:10px 10px 0 0;
+    padding:10px 10px 50px;
+    position:relative;
+    width:245px
+}
+
+#blog-grid article .wp-post-image {
+    margin:0 0 10px
+}
+
+#blog-grid article h3 {
+    font-size:1em;
+    font-weight:700;
+    margin:10px 0;
+    letter-spacing:0;
+    line-height:1.2em
+}
+
+#blog-grid article small {
+    color:#999;
+    display:block;
+    margin:15px 0 10px
+}
+
+#blog-grid .post-meta {
+    background-color:#0F1012;
+    bottom:0;
+    color:#FFF;
+    font-size:1em;
+    left:0;
+    line-height:19px;
+    padding:10px;
+    position:absolute;
+    width:245px
+}
+
+
+/* ----- LINK ----- */
+.link-url {
+    color:#999;
+    display:block;
+    font-size:1.333em;
+    margin:20px 0 0;
+    word-wrap:break-word
+}
+
+.post-icon {
+    background:url(images/post-icons.png) no-repeat;
+    bottom:0;
+    height:39px;
+    position:absolute;
+    right:0;
+    width:39px
+}
+
+/* POST TYPE ICONS */
+.format-post .post-icon {
+    background-position:0 0
+}
+
+.format-video .post-icon {
+    background-position:-39px 0
+}
+
+.format-quote .post-icon {
+    background-position:-78px 0
+}
+
+.format-status .post-icon {
+    background-position:-117px 0
+}
+
+.format-gallery .post-icon {
+    background-position:-156px 0
+}
+
+.format-link .post-icon {
+    background-position:-195px 0
+}
+
+.format-audio .post-icon {
+    background-position:0 -39px
+}
+
+.item-link {
+    height:100%;
+    left:0;
+    overflow:hidden;
+    position:absolute;
+    text-indent:-999px;
+    top:0;
+    width:100%;
+    z-index:3
+}
+
+.sticky {
+}

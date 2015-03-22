@@ -1,0 +1,262 @@
+/* ----------------------------------------
+    STRUCTURE
+---------------------------------------- */
+html {
+    height:100%
+}
+
+body {
+    background:#FFF;
+    color:#555;
+    font-family:helvetica,Arial,sans-serif;
+    font-size:75%;
+    height:100%;
+    line-height:1.5em;
+    position:relative;
+    -webkit-text-size-adjust:none
+/* Preserve all font sizes in mobile safari */
+}
+
+#wrapper {
+    display:block;
+    margin:0 auto;
+    width:1036px
+}
+
+#sidebar {
+    background:#0F1012;
+    color:#555;
+    float:left;
+    font-size:1em;
+    line-height:1.4em;
+    padding:40px 20px 0;
+    position:fixed;
+    width:180px;
+    z-index:2
+}
+
+#sidebar header {
+    position:relative
+}
+
+#sidebar a,#footer a {
+    color:#737373
+}
+
+#sidebar a:hover,#footer a:hover {
+    border-bottom:1px dotted #737373
+}
+
+a#logo {
+    border-bottom:4px solid #44464A;
+    color:#FFF;
+    display:block;
+    font-size:2.5em;
+    font-weight:700;
+    letter-spacing:-2px;
+    line-height:36px;
+    padding-bottom:20px;
+    width:180px
+}
+
+#sidebar a#logo:hover {
+    border-bottom:4px solid #44464A
+}
+
+#logo img {
+    max-width:180px
+}
+
+.mobile-logo {
+    display:none
+}
+
+/* ----- NAVIGATON ----- */
+#main-navigation {
+    line-height:1.4em;
+    margin:0 0 0 -20px;
+    position:relative;
+    width:220px;
+    z-index:2
+}
+
+#sidebar #main-navigation select {
+    display:none;
+    width:232px
+}
+
+#navigation li {
+    position:relative
+}
+
+#navigation,#navigation a {
+    display:block
+}
+
+#main-navigation ul {
+    margin:20px 0
+}
+
+#main-navigation a {
+    color:#737373;
+    padding:4px 20px
+}
+
+#main-navigation a:hover {
+    background:#44464A;
+    border:none;
+    color:#FFF
+}
+
+#main-navigation .hover {
+    background:#44464A
+}
+
+#main-navigation .hover > a {
+    color:#939393
+}
+
+#main-navigation .hover > a:hover {
+    color:#FFF
+}
+
+/* NAVIGATION SUBMENUS */
+#main-navigation ul ul {
+    background:#44464A;
+    display:none;
+    left:200px;
+    margin:0;
+    padding:10px;
+    position:absolute;
+    top:0;
+    width:200px;
+    z-index:99999
+}
+
+#main-navigation ul ul a {
+    color:#939393;
+    padding:4px 0
+}
+
+#main-navigation ul ul ul {
+    top:-10px
+}
+
+#navigation li:hover ul ul,#navigation li:hover ul ul ul,#navigation li:hover ul ul ul ul {
+    display:none
+}
+
+#navigation li:hover ul,#navigation li li:hover ul,#navigation li li li:hover ul,#navigation li li li li:hover ul {
+    display:block
+}
+
+/* ----- FOOTER ----- */
+#footer {
+    background-color:#333;
+    margin:0;
+    padding:1px 20px 20px
+}
+
+.widget-sidebar {
+    margin:0 0 40px
+}
+
+.copyright {
+    font-size:.833em;
+    margin:40px 0 0
+}
+
+.copyright span {
+    clear:both;
+    display:block
+}
+
+/* ----- CONTENT ----- */
+#content-wrapper {
+    float:right;
+    width:816px;
+    position:relative;
+    z-index:1
+}
+
+#content {
+    background-color:#FFF;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0px 0px 6px 0px rgba(0,0,0,0.3);
+}
+
+.page-intro,#colorbox .page-intro {
+    margin:40px
+}
+
+.archive .page-intro,.tax-portfolio-category .page-intro,.page-template-page-portfolio-php .page-intro {
+    margin-bottom:0
+}
+
+#slider {
+    margin-top:40px;
+    overflow:hidden
+}
+
+#content #slider:first-child,#content .wp-post-image:first-child {
+    margin:0
+}
+
+.page-content {
+    margin:20px 40px 40px;
+    width:736px
+}
+
+.page-content:first-child {
+    margin:20px 40px 0
+}
+
+/* ---------- PAGINATION ---------- */
+.pagination {
+    background-color:#0F1012;
+    color:#555;
+    float:right;
+    font-size:1em;
+    margin:40px 0 0;
+    padding:12px 10px
+}
+
+.pagination span {
+    padding:0 5px
+}
+
+.pagination a {
+    color:#737373
+}
+
+.pagination a:hover {
+    color:#44464A;
+    text-decoration:none
+}
+
+/* ----- wp_link_pages() -- */
+.page-content .pagination {
+    background:none;
+    float:none;
+    margin:20px 0;
+    padding:0;
+    text-align:left;
+    width:100%
+}
+
+.page-content .pagination span {
+    padding:3px 5px;
+    border:1px solid #EEE
+}
+
+.page-content .pagination ul {
+    margin:0;
+    overflow:hidden
+}
+
+.page-content .pagination ul li {
+    background:0;
+    margin:0;
+    padding:0
+}
