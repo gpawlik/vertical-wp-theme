@@ -245,8 +245,10 @@ body {
   float: left;
   font-size: 1em;
   line-height: 1.4em;
-  padding: 40px 20px 0;
+  padding: 0 20px 0;
   position: fixed;
+  top: 0;
+  bottom: 0;
   width: 180px;
   z-index: 2; }
 
@@ -285,7 +287,8 @@ a#logo {
   margin: 0 0 0 -20px;
   position: relative;
   width: 220px;
-  z-index: 2; }
+  z-index: 2;
+  height: 100%; }
 
 #sidebar #main-navigation select {
   display: none;
@@ -345,7 +348,7 @@ a#logo {
 
 /* ----- FOOTER ----- */
 #footer {
-  background-color: #333;
+  background-color: #F1C40F;
   margin: 0;
   padding: 1px 20px 20px; }
 
@@ -433,6 +436,21 @@ a#logo {
   background: 0;
   margin: 0;
   padding: 0; }
+
+/* Profile footer image */
+#wrapper #gp-profile-footer {
+  border: 8px solid #fff;
+  width: 150px;
+  height: 150px;
+  display: block;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center; }
 
 /* ----------------------------------------
     BLOG INDEX (TRADITIONAL LAYOUT)
@@ -604,6 +622,10 @@ p + video, p + .rve-embed-container {
   margin: 40px auto;
   position: relative;
   overflow: hidden; }
+
+.video-container iframe {
+  width: 100%;
+  max-height: 450px; }
 
 .audio-container {
   margin-left: 40px;
@@ -1288,7 +1310,6 @@ img.size-full {
     WIDGETS
 ---------------------------------------- */
 .widget {
-  border-top: 1px dotted #222;
   margin: 0 0 20px;
   padding-top: 20px; }
 
@@ -1303,6 +1324,9 @@ img.size-full {
 
 .widget-sidebar .widgettitle a:hover {
   color: #CCC; }
+
+.widget ul {
+  list-style-type: none; }
 
 .widget ul li {
   margin: 6px 0 0; }
@@ -1362,11 +1386,15 @@ img.size-full {
 /* ----- SOCIAL ----- */
 .social-button-holder {
   border-top: 1px dotted #222;
+  background: #0F1012;
   display: block;
   padding: 15px 0 20px;
   overflow: hidden;
   text-align: center;
-  width: 182px; }
+  width: 182px;
+  position: absolute;
+  bottom: 0;
+  z-index: 9; }
 
 .social-button-holder a {
   display: inline-block;

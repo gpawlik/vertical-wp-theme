@@ -287,7 +287,6 @@ img.size-full {
     WIDGETS
 ---------------------------------------- */
 .widget {
-    border-top:1px dotted #222;
     margin:0 0 20px;
     padding-top:20px
 }
@@ -305,6 +304,10 @@ img.size-full {
 
 .widget-sidebar .widgettitle a:hover {
     color:#CCC
+}
+
+.widget ul {
+    list-style-type:none;
 }
 
 .widget ul li {
@@ -380,11 +383,15 @@ img.size-full {
 /* ----- SOCIAL ----- */
 .social-button-holder {
     border-top:1px dotted #222;
+    background:$sidebar-color;
     display:block;
     padding:15px 0 20px;
     overflow:hidden;
     text-align:center;
-    width:182px
+    width:182px;
+    position:absolute;
+    bottom:0;
+    z-index:9;
 }
 
 .social-button-holder a {

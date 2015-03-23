@@ -8,9 +8,28 @@
  * http://themeforest.net/user/EugeneO/portfolio
  *
  */
-
  
 jQuery(document).ready(function($) {
+
+    $('#gp-profile-footer').click(function(e){
+        e.preventDefault();
+        $(this).profilize();
+    });
+    $(window).scroll(function(){
+        $('#gp-profile-footer').profilize();
+    });
+        
+    
+    /* Custom scrollbars */
+    $( window ).resize(function() {
+        changeMenuHeight();      
+    });
+    changeMenuHeight();
+    jQuery("#main-navigationx").customScrollbar({
+        skin: "default-skin", 
+        hScroll: false,
+        updateOnWindowResize: true
+    });    
 
 /* ---------------------------------------------------
 	Navigation
@@ -297,4 +316,28 @@ jQuery(document).ready(function($) {
 	}
 	
     
-});	
+});
+
+/* Simple animation of profile picture */
+jQuery.fn.profilize = function() {
+    var $el = this;
+    var items = parseInt($el.attr('data-limit'));
+    var current_image = parseInt($el.attr('data-item'));
+    var new_image = current_image + 1;
+
+    if(new_image > items) new_image = 1;
+    setTimeout(function() {
+        $el.attr('data-item', new_image).removeClass().addClass('profile' + new_image);
+    }, 100);    
+};
+
+/* Simple animation of profile picture */
+function changeMenuHeight() {
+    var sidebarHeight = jQuery("#sidebar").height();
+    var logoHeight    = jQuery("#logo").height();
+    var socialHeight  = jQuery("social-button-holder").height();
+    var navHeight = sidebarHeight - (logoHeight + socialHeight + 100);    
+    jQuery("#main-navigation").height(navHeight); 
+};
+
+

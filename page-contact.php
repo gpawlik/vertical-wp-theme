@@ -7,9 +7,6 @@
  * This template includes a contact form that allows visitors to submit a message
  * to a specified email address.
  * 
- * @package WordPress
- * @subpackage Reach
- * @since Reach 1.0
  **/ 
  
 get_header();
