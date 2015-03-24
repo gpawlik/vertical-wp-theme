@@ -4,9 +4,6 @@
  *
  * Displays all of the <head> section and everything up to the main site navigation.
  *
- * @package WordPress
- * @subpackage Reach
- * @since reach 1.0
  **/ 
 
 /**

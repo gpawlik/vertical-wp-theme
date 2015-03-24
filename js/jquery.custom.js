@@ -1,27 +1,14 @@
 /*
  * jquery.custom.js
  * 
- * Custom scripts for Reach WordPress Theme by EugeneO.
+ * Custom scripts.
  * 
- * Copyright 2011 EugeneO
- * http://eugeneo.com
- * http://themeforest.net/user/EugeneO/portfolio
- *
  */
  
 jQuery(document).ready(function($) {
-
-    $('#gp-profile-footer').click(function(e){
-        e.preventDefault();
-        $(this).profilize();
-    });
-    $(window).scroll(function(){
-        $('#gp-profile-footer').profilize();
-    });
-        
-    
+            
     /* Custom scrollbars */
-    $( window ).resize(function() {
+    $(window).resize(function() {
         changeMenuHeight();      
     });
     changeMenuHeight();
@@ -305,6 +292,19 @@ jQuery(document).ready(function($) {
 	}, function() {
 		$(this).stop().animate({ opacity : 1 }, 250 );
 	});
+        
+        
+/* ---------------------------------------------------
+	Footer image animation
+-------------------------------------------------- */
+
+        $('#gp-profile-footer').click(function(e){
+            e.preventDefault();
+            $(this).profilize();
+        });
+        $(window).scroll(function(){
+            $('#gp-profile-footer').profilize();
+        });       
 
 	
 /* ---------------------------------------------------
@@ -331,7 +331,7 @@ jQuery.fn.profilize = function() {
     }, 100);    
 };
 
-/* Simple animation of profile picture */
+/* Menu height control */
 function changeMenuHeight() {
     var sidebarHeight = jQuery("#sidebar").height();
     var logoHeight    = jQuery("#logo").height();
