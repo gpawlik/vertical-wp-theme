@@ -18,13 +18,13 @@
                 </div>
                 <!-- /End 3/3 -->
             </div>
-
-            <!-- copyright -->
-            <div class="copyright">
-                &copy; <?php echo date( "Y" ); ?> <a href="<?php echo home_url(); ?>/" ><?php bloginfo('name'); ?></a>. <span><?php echo of_get_option( 'copyright_text' ); ?></span>
-            </div>	
 	
 	</footer>
+
+        <!-- copyright -->
+        <div class="copyright">
+            &copy; <?php echo date( "Y" ); ?> <a href="<?php echo home_url(); ?>/" ><?php bloginfo('name'); ?></a>. <span><?php echo of_get_option( 'copyright_text' ); ?></span>
+        </div>
 
     </div> <!-- #content-wrapper -->
 	

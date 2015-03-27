@@ -14,23 +14,27 @@
 					
 					<h2><a href="<?php echo $post_link; ?>"><?php the_title(); ?></a></h2>
 					
-					<div class="two-thirds">
-						
-						<?php if ( has_post_thumbnail() ) { ?>
-							
-							<!-- thumbnail -->
-							<a class="blog-traditional-thumbnail" href="<?php echo $post_link; ?>">								
-								<?php the_post_thumbnail( "thumbnail-post" ); ?>
-							</a>
-							
-						<?php } ?>
-					
-						<?php the_excerpt(); ?>
-						
-					</div>
-					<div class="third end">
-						<?php create_post_meta(); ?>
-					</div>
+                                        <div class="blog-traditional-header clearfix">
+                                        
+                                            <div class="gp-grid-3-4">
+
+                                                <?php if ( has_post_thumbnail() ) { ?>
+
+                                                    <!-- thumbnail -->
+                                                    <a class="blog-traditional-thumbnail" href="<?php echo $post_link; ?>">								
+                                                        <?php the_post_thumbnail( "thumbnail-post" ); ?>
+                                                    </a>
+
+                                                <?php } ?>											
+
+                                            </div>
+                                            <div class="gp-grid-1-4">
+                                                <?php create_post_meta(); ?>
+                                            </div>
+                                            
+                                        </div>
+                                            
+                                        <?php the_excerpt(); ?>
 					
 				</article>
 			

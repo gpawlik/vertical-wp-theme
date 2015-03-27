@@ -181,7 +181,12 @@ function enqueueScripts() {
 
 		# ImagesLoaded
 		wp_enqueue_script( 'imagesloaded', trailingslashit( get_template_directory_uri() ) .'js/imagesloaded.min.js', false, false, 1  );
+                wp_enqueue_style( 'imagesloaded', get_template_directory_uri() .'/css/jquery.custom-scrollbar.css' );
 		
+		# Custom Scroll
+		wp_enqueue_script( 'customscroll', trailingslashit( get_template_directory_uri() ) .'js/jquery.custom-scrollbar.js', false, false, 1  );
+		                
+                
 		# Isotope
 		if ( 
 			( is_page_template( 'page-portfolio.php' ) )
@@ -713,8 +718,8 @@ function funky_register_sidebars() {
 	
 	$funky_sidebar_attr = array(
 		'name'          => '',
-		'before_widget' => '<li id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</li>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class="widgettitle">',
 		'after_title'   => '</h4>',
 	);
@@ -825,18 +830,18 @@ if ( !function_exists( 'create_post_meta' ) ) {
 		
 			<!-- post meta -->
 			<aside class="post-meta clearfix">		
-				<ul>
+				<ul class="clearfix">
 					<?php if ( of_get_option( 'author_meta' ) == "1" ) { ?>
-						<li class="author-meta"><?php the_author_posts_link(); ?></li>
+                                                <li class="author-meta"><span class="icon-user"></span><?php the_author_posts_link(); ?></li>
 					<?php } ?>
 					<?php if ( of_get_option( 'date_meta' ) == "1" ) { ?>
-						<li class="date-meta"><time datetime="<?php the_time( 'c' );?>"><?php the_time( get_option( 'date_format' ) ); ?></time></li>
+						<li class="date-meta"><span class="icon-calendar"></span><time datetime="<?php the_time( 'c' );?>"><?php the_time( get_option( 'date_format' ) ); ?></time></li>
 					<?php } ?>
 					<?php if ( of_get_option( 'category_meta' ) == "1" ) { ?>
-						<li class="category-meta"><?php the_category( ', ' ); ?></li>
+						<li class="category-meta"><span class="icon-pin-outline"></span><?php the_category( ', ' ); ?></li>
 					<?php } ?>
 					<?php if ( of_get_option( 'comments_meta' ) == "1" ) { ?>		
-						<li class="comments-meta"><?php comments_popup_link( '0', '1', '%' ); ?></li>
+						<li class="comments-meta"><span class="icon-chat-alt"></span><?php comments_popup_link( '0', '1', '%' ); ?></li>
 					<?php } ?>
 					<?php if ( of_get_option( 'share_meta' ) == "1" && is_single() ) { ?>
 						<li class="share">
@@ -970,7 +975,7 @@ if ( !function_exists( 'funky_embed_feature_content' ) ) {
 	 * @since WirePress 1.0
 	 **/
  
-	function funky_embed_feature_content() {
+	function funky_embed_feature_content() {            
 
 		global $post, $shortname, $wp_embed;
 		
@@ -981,6 +986,10 @@ if ( !function_exists( 'funky_embed_feature_content' ) ) {
 		} elseif ( get_post_meta( $post->ID, $shortname .'_video_m4v', true ) != '' ) {
 			
 			$url = get_post_meta( $post->ID, $shortname .'_video_m4v', true );			
+		
+		} elseif ( get_post_meta( $post->ID, 'web_video', true ) != '' ) {
+			
+			$url = get_post_meta( $post->ID, 'web_video', true );			
 		
 		} else {
 		
@@ -1218,10 +1227,11 @@ function gp_recent_posts($atts) {
         'title'    => '',
         'subtitle' => '',
         'posts'    => 3,
-        'grid'     => '1-3'
+        'grid'     => '1-3',
+        'excerpt'  => true
     ), $atts);
 
-    $title = (!empty($a['title'])) ? '<h3>' . $a['title'] . '</h3>' : '';
+    $title = (!empty($a['title'])) ? '<h3 class="gp-section-title"><span>' . $a['title'] . '</span></h3>' : '';
     $subtitle = (!empty($a['subtitle'])) ? '<p class="gp-section-subtitle">' . $a['subtitle'] . '</p>' : '';
 
     $output  = $title;
@@ -1240,7 +1250,8 @@ function gp_recent_posts($atts) {
             $output .= '<li class="gp-grid-' . $a['grid'] . '">' .
                            '<a href="' . get_permalink() . '" class="gp-listing-image" style="background-image:url(' . gp_get_thumnail(get_the_ID(), 'listing') . ')"></a>' .
                            '<div class="gp-listing-text">' . 
-                               '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' . 
+                               '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' .
+                               '<p>' . wp_trim_words( get_the_excerpt(), 20, '... <a href="'. get_permalink() .'">Read More</a>' ) . '</p>' .
                            '</div>' . 
                        '</li>';
         endwhile;
@@ -1265,14 +1276,15 @@ function gp_list_child_pages($atts) {
     
     $posts_array = get_posts(
         array(
-            'post_type' => 'page',
-            'numberposts' => $a['limit'],
-            'post_status' => 'publish',
-            'post_parent' => $a['parent']
+            'post_type'    => 'page',
+            'numberposts'  => $a['limit'],
+            'post__not_in' => array(get_the_ID()),
+            'post_status'  => 'publish',
+            'post_parent'  => $a['parent']
         )
     );         
     
-    $title = (!empty($a['title'])) ? '<h3>' . $a['title'] . '</h3>' : '';
+    $title = (!empty($a['title'])) ? '<h3 class="gp-section-title"><span>' . $a['title'] . '</span></h3>' : '';
     $subtitle = (!empty($a['subtitle'])) ? '<p class="gp-section-subtitle">' . $a['subtitle'] . '</p>' : '';
     
     $output  = $title;
