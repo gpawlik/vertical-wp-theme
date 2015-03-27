@@ -2,6 +2,14 @@
     TYPOGRAPHY
 ---------------------------------------- */
 
+body {
+    font-family:"Source Sans Pro", Verdana, sans-serif;
+    color:#555;    
+    font-size:75%;
+    height:100%;
+    line-height:1.5em;    
+}
+
 a,a:visited {
     color:#737373;
     text-decoration:none;
@@ -24,13 +32,19 @@ a:hover,a:visited:hover {
 }
 
 p {
-    margin:20px 0 0
+    margin:20px 0 0;
+    font-family:"Source Sans Pro", Verdana, sans-serif;
+    font-size:1.8em;
+    line-height:140%;
+    font-weight:100;
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-weight:400;
-    margin:40px 0 0;
-    line-height:1em
+    margin:15px 0;
+    line-height:1em;
+    font-family:"Oswald",Verdana, sans-serif;
+    text-transform:uppercase;
 }
 
 h1 {

@@ -7,11 +7,6 @@ html {
 
 body {
     background:#FFF;
-    color:#555;
-    font-family:helvetica,Arial,sans-serif;
-    font-size:75%;
-    height:100%;
-    line-height:1.5em;
     position:relative;
     -webkit-text-size-adjust:none
 /* Preserve all font sizes in mobile safari */
@@ -102,7 +97,10 @@ a#logo {
 
 #main-navigation a {
     color:#737373;
-    padding:4px 20px
+    padding:8px 20px;
+    font-family:"Oswald";
+    font-size:1.5em;
+    text-transform:uppercase;
 }
 
 #main-navigation a:hover {
@@ -166,12 +164,19 @@ a#logo {
 
 .copyright {
     font-size:.833em;
-    margin:40px 0 0
+    padding:15px 20px;
+    color:#fff;
+    background-color:darken($flat-sunflower, 10%);
+    text-align:center;
+}
+.copyright a {
+    color:#fff;
 }
 
 .copyright span {
     clear:both;
-    display:block
+    display:block;
+    margin-top:-5px;
 }
 
 /* ----- CONTENT ----- */

@@ -5,6 +5,49 @@
     display:none
 }
 
+/* ------ SECTIONS ------ */
+.gp-section-title {
+    font-size:3.5em;
+    text-align:center;
+    overflow:hidden;
+    color:#444;
+}
+.gp-section-subtitle {
+    font-family:"Oswald";
+    text-transform:uppercase;
+    font-size:2em;
+    text-align:center;
+    margin-top:-10px;
+    margin-bottom:15px;
+    color:#999;
+}
+// horizontal line
+.gp-section-title span {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    position: relative;
+    padding: 0 20px;
+}
+
+.gp-section-title span:before, .gp-section-title span:after {
+    content: '';
+    display: block;
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    border-top: 1px solid #333;
+}
+.gp-section-title span:before {
+    right: 100%;
+}
+.gp-section-title span:after {
+    left: 100%;
+}
+
+
 /* ------ LISTINGS ------ */
 .page-content ul.gp-listing,.post-content ul.gp-listing {
     margin:0 0 20px;
@@ -27,6 +70,9 @@ ul.gp-listing-posts {
         text-align:center;
         padding:5px 10px;
         min-height:70px;
+        p {
+            font-size:1.5em;            
+        }
     }
 }
 
@@ -311,7 +357,8 @@ img.size-full {
 }
 
 .widget ul li {
-    margin:6px 0 0
+    margin:6px 0 0;
+    font-size:1.2em;
 }
 
 .widget .children,.widget .sub-menu {
@@ -434,6 +481,11 @@ img.size-full {
 
 .youtube-button {
     background:url(images/social/youtube.png) no-repeat
+}
+
+/* ----- TWEET BOX ----- */
+.widget .tweets {
+    margin-bottom:15px;
 }
 
 /* IE7 Fix */

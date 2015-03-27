@@ -27,7 +27,9 @@ $html_class = ( is_admin_bar_showing() ) ? 'wp-toolbar' : '';
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	
+        
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>        	
+        
 	<?php wp_head(); ?>
 	
 	<?php get_template_part( "background" ); ?>
