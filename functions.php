@@ -178,6 +178,9 @@ function enqueueScripts() {
 			wp_enqueue_script( 'flexslider', get_template_directory_uri() .'/js/jquery.flexslider-min.js', array( 'jquery' ), false, 1 );
 			wp_enqueue_style( 'flexslider', get_template_directory_uri() .'/css/flexslider.css' );
 		}
+                
+                # Wow
+                wp_enqueue_script( 'wow', trailingslashit( get_template_directory_uri() ) .'js/jquery.wow.js', false, false, 1  );
 
 		# ImagesLoaded
 		wp_enqueue_script( 'imagesloaded', trailingslashit( get_template_directory_uri() ) .'js/imagesloaded.min.js', false, false, 1  );
@@ -202,6 +205,10 @@ function enqueueScripts() {
 			wp_enqueue_script( 'wp-mediaelement' );
 			wp_enqueue_style( 'mediaelement', includes_url() .'/js/mediaelement/mediaelementplayer.min.css?ver=2.13.0' );
 		}
+                
+                # Animate	
+		wp_enqueue_style( 'animate', get_template_directory_uri() .'/css/animate.css' );
+		
 		
 		#modernizr
 		wp_enqueue_script( 'modernizr', get_template_directory_uri() .'/js/modernizr-1.7.min.js', array( 'jquery' ), false, 0 );
@@ -284,7 +291,7 @@ function funky_generate_dynamic_css() {
 	.page-content a, .page-content a:visited { color: {$links}; }
 	.page-content a:hover, .page-content a:visited:hover, #comments .comment small a:hover, #comments .comment-reply-link:hover { color: {$link_hover}; }";
 	
-	wp_add_inline_style( $shortname .'-style', $link_style );
+	//wp_add_inline_style( $shortname .'-style', $link_style );
 	
 	
 	/* ---------- BUTTONS ---------- */
@@ -1234,7 +1241,8 @@ function gp_recent_posts($atts) {
     $title = (!empty($a['title'])) ? '<h3 class="gp-section-title"><span>' . $a['title'] . '</span></h3>' : '';
     $subtitle = (!empty($a['subtitle'])) ? '<p class="gp-section-subtitle">' . $a['subtitle'] . '</p>' : '';
 
-    $output  = $title;
+    $output  = '<section class="gp-listing-section">';
+    $output .= $title;
     $output .= $subtitle;
     $output .= '<ul class="gp-listing gp-listing-posts clearfix">';
     
@@ -1248,16 +1256,20 @@ function gp_recent_posts($atts) {
     if (have_posts()) :
         while (have_posts()) : the_post();
             $output .= '<li class="gp-grid-' . $a['grid'] . '">' .
-                           '<a href="' . get_permalink() . '" class="gp-listing-image" style="background-image:url(' . gp_get_thumnail(get_the_ID(), 'listing') . ')"></a>' .
+                           '<a href="' . get_permalink() . '" class="gp-listing-image" style="background-image:url(' . gp_get_thumnail(get_the_ID(), 'listing') . ')">' .
+                               '<span class="gp-listing-title">' . get_the_title() . '</span>' .
+                           '</a>' .
                            '<div class="gp-listing-text">' . 
-                               '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' .
-                               '<p>' . wp_trim_words( get_the_excerpt(), 20, '... <a href="'. get_permalink() .'">Read More</a>' ) . '</p>' .
-                           '</div>' . 
+                               '<span class="gp-listing-date">' . get_the_date() . '</span>' .
+                               '<p>' . wp_trim_words( get_the_excerpt(), 20, '... <a href="'. get_permalink() .'" class="gp-button">Read More</a>' ) . '</p>' .
+                           '</div>' .                            
                        '</li>';
         endwhile;
     endif;
     
     $output .= '</ul>';
+    
+    $output .= '</section>';
 
     wp_reset_query();
     return $output;
@@ -1267,11 +1279,13 @@ add_shortcode('recent_posts', 'gp_recent_posts');
 
 function gp_list_child_pages($atts) {
     $a = shortcode_atts( array(
-        'title'    => '',
-        'subtitle' => '',
-        'parent'   => '',
-        'limit'    => -1,
-        'grid'     => '1-3'
+        'title'      => '',
+        'subtitle'   => '',
+        'parent'     => '',
+        'limit'      => -1,
+        'grid'       => '1-3',
+        'link_title' => '',
+        'link_href'  => ''
     ), $atts);
     
     $posts_array = get_posts(
@@ -1287,18 +1301,24 @@ function gp_list_child_pages($atts) {
     $title = (!empty($a['title'])) ? '<h3 class="gp-section-title"><span>' . $a['title'] . '</span></h3>' : '';
     $subtitle = (!empty($a['subtitle'])) ? '<p class="gp-section-subtitle">' . $a['subtitle'] . '</p>' : '';
     
-    $output  = $title;
+    $output  = '<section class="gp-listing-section">';
+    $output .= $title;
     $output .= $subtitle;
-    $output .= '<ul class="gp-listing gp-listing-posts clearfix">';    
+    $output .= '<ul class="gp-listing gp-listing-posts clearfix wow bounceInUp">';    
     foreach($posts_array as $post) {                 
         $output .= '<li class="gp-grid-' . $a['grid'] . '">' .
-                       '<a href="' . get_permalink($post->ID) . '" class="gp-listing-image" style="background-image:url(' . gp_get_thumnail($post->ID, 'listing') . ')"></a>' .
-                       '<div class="gp-listing-text">' . 
-                           '<a href="' . get_permalink($post->ID) . '">' . $post->post_title . '</a>' . 
-                       '</div>' . 
+                       '<a href="' . get_permalink($post->ID) . '" class="gp-listing-image" style="background-image:url(' . gp_get_thumnail($post->ID, 'listing') . ')">' .
+                       '<span class="gp-listing-title">' . $post->post_title . '<span class="gp-listing-icon icon-play-circled2"></span></span>' .
+                       '</a>' .
                    '</li>';        
     }
     $output .= '</ul>';    
+    
+    if (!empty($a['link_title']) && !empty($a['link_href'])) {
+        $output .= '<a href="'. $a['link_href'] .'" class="gp-button">' . $a['link_title'] . '</a>';
+    }
+    
+    $output .= '</section>'; 
 
     return $output;
 }

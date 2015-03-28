@@ -103,7 +103,8 @@ a#logo {
     text-transform:uppercase;
 }
 
-#main-navigation a:hover {
+#main-navigation a:hover,
+#main-navigation li.current_page_item a {
     background:#44464A;
     border:none;
     color:#FFF
@@ -213,7 +214,8 @@ a#logo {
 
 .page-content {
     margin:20px 40px 40px;
-    width:736px
+    width:736px;
+    min-height:350px;
 }
 
 .page-content:first-child {

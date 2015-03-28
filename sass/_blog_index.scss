@@ -17,7 +17,14 @@
 .blog-traditional-thumbnail {
     display:block;
     line-height:0;
-    position:relative
+    position:relative;
+    overflow:hidden;
+    img {
+        @include transition(all, 0.4s, ease);       
+        &:hover {
+            @include scale(1.02);
+        }
+    }
 }
 
 .blog-traditional h2 {
