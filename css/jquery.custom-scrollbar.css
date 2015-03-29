@@ -13,6 +13,8 @@
 
 .scrollable .viewport .overview {
   position: absolute;
+  right:0;
+  left:0;
 }
 
 .scrollable .scroll-bar {

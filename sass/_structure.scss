@@ -8,14 +8,18 @@ html {
 body {
     background:#FFF;
     position:relative;
-    -webkit-text-size-adjust:none
-/* Preserve all font sizes in mobile safari */
+    -webkit-text-size-adjust:none;
+    background-image: url($background-image);    
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 #wrapper {
     display:block;
     margin:0 auto;
-    width:1036px
+    width:1036px;
+    box-shadow:500px 0 0 0 #eee;
 }
 
 #sidebar {
@@ -66,6 +70,11 @@ a#logo {
 
 .mobile-logo {
     display:none
+}
+
+/* ----- ANIMATIONS ----- */
+.wow {
+    opacity:0;
 }
 
 /* ----- NAVIGATON ----- */
@@ -192,11 +201,20 @@ a#logo {
     background-color:#FFF;
     overflow:hidden;
     position:relative;
-    box-shadow:0px 0px 6px 0px rgba(0,0,0,0.3);
+    /*box-shadow:0px 0px 6px 0px rgba(0,0,0,0.3);*/
 }
 
-.page-intro,#colorbox .page-intro {
-    margin:40px
+.page-intro, #colorbox .page-intro {
+    padding:40px;
+    h1 {
+        color:#fff;
+    }
+}
+.page-intro {
+    background-image: url($background-image);    
+    /*background-size: cover;*/
+    background-attachment: fixed;
+    background-position: top;    
 }
 
 .archive .page-intro,.tax-portfolio-category .page-intro,.page-template-page-portfolio-php .page-intro {
@@ -213,13 +231,53 @@ a#logo {
 }
 
 .page-content {
-    margin:20px 40px 40px;
+    padding:20px 40px 40px;
     width:736px;
     min-height:350px;
+    position:relative;
+    overflow:hidden;
+    @include transition(all, 0.5s, ease);
+    &.with-social-buttons {
+        padding-top:60px;
+    }
 }
 
 .page-content:first-child {
     margin:20px 40px 0
+}
+
+
+/* ---------- SOCIAL BUTTONS ---------- */
+#s-share-buttons {
+    position:absolute;
+    top:-100px;
+    left:0;
+    right:0;
+    background:#fff;
+    border-bottom:1px solid #dedede;
+    padding:20px 40px;
+    height:20px;
+    @include transition(top, 0.5s, ease);
+    &.active {
+        top:0;
+    }
+}
+.fb_iframe_widget {
+    margin-right:5px;
+}
+#twitter-widget-0 {
+    width:95px !important;
+}
+#___plusone_0 {
+    width:62px !important;
+}
+.s-share-buttons-preloader {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#fff;
 }
 
 /* ---------- PAGINATION ---------- */

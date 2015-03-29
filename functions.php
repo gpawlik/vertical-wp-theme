@@ -1241,7 +1241,7 @@ function gp_recent_posts($atts) {
     $title = (!empty($a['title'])) ? '<h3 class="gp-section-title"><span>' . $a['title'] . '</span></h3>' : '';
     $subtitle = (!empty($a['subtitle'])) ? '<p class="gp-section-subtitle">' . $a['subtitle'] . '</p>' : '';
 
-    $output  = '<section class="gp-listing-section">';
+    $output  = '<section class="gp-listing-section wow fadeInDown">';
     $output .= $title;
     $output .= $subtitle;
     $output .= '<ul class="gp-listing gp-listing-posts clearfix">';
@@ -1301,10 +1301,10 @@ function gp_list_child_pages($atts) {
     $title = (!empty($a['title'])) ? '<h3 class="gp-section-title"><span>' . $a['title'] . '</span></h3>' : '';
     $subtitle = (!empty($a['subtitle'])) ? '<p class="gp-section-subtitle">' . $a['subtitle'] . '</p>' : '';
     
-    $output  = '<section class="gp-listing-section">';
+    $output  = '<section class="gp-listing-section wow fadeInDown">';
     $output .= $title;
     $output .= $subtitle;
-    $output .= '<ul class="gp-listing gp-listing-posts clearfix wow bounceInUp">';    
+    $output .= '<ul class="gp-listing gp-listing-posts clearfix">';    
     foreach($posts_array as $post) {                 
         $output .= '<li class="gp-grid-' . $a['grid'] . '">' .
                        '<a href="' . get_permalink($post->ID) . '" class="gp-listing-image" style="background-image:url(' . gp_get_thumnail($post->ID, 'listing') . ')">' .

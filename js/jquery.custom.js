@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
         changeMenuHeight();      
     });
     changeMenuHeight();
-    jQuery("#main-navigationx").customScrollbar({
+    jQuery("#main-navigation").customScrollbar({
         skin: "default-skin", 
         hScroll: false,
         updateOnWindowResize: true
