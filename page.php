@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="wrapper" class="clearfix">
+<div id="wrapper" class="clearfixx">
 	
 	<!-- navigation sidebar -->
 	<?php get_template_part( 'navigation' ); ?>
@@ -42,7 +42,7 @@
 					<!-- content -->
 					<?php if( $post->post_content != "" ) { ?>
 					
-						<article class="page-content clearfix">
+						<article class="page-content clearfix wow fadeInDown">
 					
 							<?php the_content(); ?>
 						

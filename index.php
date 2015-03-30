@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="wrapper" class="clearfix">
+<div id="wrapper" class="clearfixx">
 	
 	<!-- navigation sidebar -->
 	<?php get_template_part( 'navigation' ); ?>

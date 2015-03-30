@@ -19,7 +19,7 @@ body {
     display:block;
     margin:0 auto;
     width:1036px;
-    box-shadow:500px 0 0 0 #eee;
+    /*box-shadow:500px 0 0 0 #eee;*/
 }
 
 #sidebar {
@@ -194,7 +194,8 @@ a#logo {
     float:right;
     width:816px;
     position:relative;
-    z-index:1
+    z-index:1;
+    box-shadow:500px 0 0 0 #eee;
 }
 
 #content {
@@ -205,16 +206,16 @@ a#logo {
 }
 
 .page-intro, #colorbox .page-intro {
-    padding:40px;
+    padding:38px 40px;
     h1 {
         color:#fff;
+        line-height:50px;
     }
 }
 .page-intro {
-    background-image: url($background-image);    
-    /*background-size: cover;*/
-    background-attachment: fixed;
-    background-position: top;    
+    background-image:url($header-image);    
+    background-position:center; 
+    background-repeat:no-repeat;
 }
 
 .archive .page-intro,.tax-portfolio-category .page-intro,.page-template-page-portfolio-php .page-intro {

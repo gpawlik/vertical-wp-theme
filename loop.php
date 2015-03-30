@@ -4,7 +4,7 @@
 	
 			<?php while ( have_posts() ): the_post(); ?>
 		
-				<article>
+				<article class="wow fadeInDown">
 					
 					<?php if ( has_post_format( 'link' )) { # Link posts
 						$post_link = funky_get_first_url( $post->post_content );
