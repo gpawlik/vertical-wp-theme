@@ -3,17 +3,17 @@
 	
             <div class="clearfix">
                 <!-- 1/3 -->
-                <div class="gp-grid-1-3">
+                <div class="gp-grid-1-4">
                     <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar(__( 'Footer Left', 'raw_theme' )) ) ?>
                 </div>
                 <!-- /End 1/3 -->
                 <!-- 2/3 -->
-                <div class="gp-grid-1-3">
+                <div class="gp-grid-1-4">
                     <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar(__( 'Footer Center', 'raw_theme' )) ) ?>
                 </div>
                 <!-- /End 2/3 -->
                 <!-- 3/3 -->
-                <div class="gp-grid-1-3">
+                <div class="gp-grid-1-2">
                     <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar(__( 'Footer Right', 'raw_theme' )) ) ?>
                 </div>
                 <!-- /End 3/3 -->

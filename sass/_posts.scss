@@ -41,7 +41,7 @@ p + video,p + .rve-embed-container {
 }
 
 .audio-container,.video-container {
-    margin:40px auto;
+    margin:0 auto;
     position:relative;
     overflow:hidden
 }
@@ -121,6 +121,9 @@ p + video,p + .rve-embed-container {
 }
 
 /* ----- POST META ----- */
+.single aside.post-meta {
+    display:none;
+}
 .post-meta ul {
     color:#fff;
     font-size:.833em;
@@ -204,7 +207,7 @@ aside.post-meta ul li:first-child {
 }
 
 #wrapper .post-meta + .wp-post-image {
-    margin-top:40px
+    margin-top:5px
 }
 
 /* ----- TAGS ----- */

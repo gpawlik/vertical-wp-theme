@@ -40,11 +40,11 @@ body {
     position:relative
 }
 
-#sidebar a,#footer a {
+#sidebar a {
     color:#737373
 }
 
-#sidebar a:hover,#footer a:hover {
+#sidebar a:hover{
     border-bottom:1px dotted #737373
 }
 
@@ -165,7 +165,22 @@ a#logo {
 #footer {
     background-color:$flat-sunflower;
     margin:0;
-    padding:1px 20px 20px
+    padding:1px 20px 20px;    
+    a {
+        color:#fefefe;
+        font-weight:bold;
+        &:hover {
+            border-bottom:1px dotted #fefefe
+        }    
+    }  
+    .widget_recent_entries {
+        font-size:1.1em;
+        .post-date {
+            color:#555;
+            font-size:0.8em;
+        }
+    }
+       
 }
 
 .widget-sidebar {

@@ -271,10 +271,10 @@ body {
 #sidebar header {
   position: relative; }
 
-#sidebar a, #footer a {
+#sidebar a {
   color: #737373; }
 
-#sidebar a:hover, #footer a:hover {
+#sidebar a:hover {
   border-bottom: 1px dotted #737373; }
 
 a#logo {
@@ -375,6 +375,16 @@ a#logo {
   background-color: #F1C40F;
   margin: 0;
   padding: 1px 20px 20px; }
+  #footer a {
+    color: #fefefe;
+    font-weight: bold; }
+    #footer a:hover {
+      border-bottom: 1px dotted #fefefe; }
+  #footer .widget_recent_entries {
+    font-size: 1.1em; }
+    #footer .widget_recent_entries .post-date {
+      color: #555;
+      font-size: 0.8em; }
 
 .widget-sidebar {
   margin: 0 0 40px; }
@@ -713,7 +723,7 @@ p + video, p + .rve-embed-container {
   margin-top: 40px; }
 
 .audio-container, .video-container {
-  margin: 40px auto;
+  margin: 0 auto;
   position: relative;
   overflow: hidden; }
 
@@ -777,6 +787,9 @@ p + video, p + .rve-embed-container {
   background: transparent !important; }
 
 /* ----- POST META ----- */
+.single aside.post-meta {
+  display: none; }
+
 .post-meta ul {
   color: #fff;
   font-size: .833em; }
@@ -847,7 +860,7 @@ aside.post-meta ul li:first-child {
   width: 100%; }
 
 #wrapper .post-meta + .wp-post-image {
-  margin-top: 40px; }
+  margin-top: 5px; }
 
 /* ----- TAGS ----- */
 .post-tags {
@@ -1278,7 +1291,8 @@ ul.gp-listing-posts .gp-listing-image {
     display: table-cell;
     vertical-align: middle;
     position: relative;
-    z-index: 4; }
+    z-index: 4;
+    padding: 0 15px; }
   ul.gp-listing-posts .gp-listing-image .gp-listing-icon {
     display: block;
     margin-top: 10px;
@@ -1296,6 +1310,19 @@ ul.gp-listing-posts .gp-listing-image {
   ul.gp-listing-posts .gp-listing-image:hover .gp-listing-icon {
     opacity: 0.8;
     font-size: 2em; }
+ul.gp-listing-posts.circled {
+  margin: 20px 0; }
+  ul.gp-listing-posts.circled .gp-listing-image {
+    width: 225px;
+    height: 225px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    margin-bottom: 20px; }
+    ul.gp-listing-posts.circled .gp-listing-image:before {
+      -moz-border-radius: 100%;
+      -webkit-border-radius: 100%;
+      border-radius: 100%; }
 ul.gp-listing-posts .gp-listing-text {
   text-align: center;
   padding: 15px 10px;

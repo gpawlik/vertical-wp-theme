@@ -1285,7 +1285,8 @@ function gp_list_child_pages($atts) {
         'limit'      => -1,
         'grid'       => '1-3',
         'link_title' => '',
-        'link_href'  => ''
+        'link_href'  => '',
+        'class'      => ''
     ), $atts);
     
     $posts_array = get_posts(
@@ -1304,7 +1305,7 @@ function gp_list_child_pages($atts) {
     $output  = '<section class="gp-listing-section wow fadeInDown">';
     $output .= $title;
     $output .= $subtitle;
-    $output .= '<ul class="gp-listing gp-listing-posts clearfix">';    
+    $output .= '<ul class="gp-listing gp-listing-posts clearfix ' . $a['class'] . '">';    
     foreach($posts_array as $post) {                 
         $output .= '<li class="gp-grid-' . $a['grid'] . '">' .
                        '<a href="' . get_permalink($post->ID) . '" class="gp-listing-image" style="background-image:url(' . gp_get_thumnail($post->ID, 'listing') . ')">' .
