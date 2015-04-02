@@ -13,7 +13,7 @@
 
 /* ----- BUTTONS ----- */
 input[type=reset],input[type=button],button,input[type=submit],.sidebar input[type=submit],.page-content input[type=submit],a.funky-button {
-    background:#F57A30 url(images/button-overlay.png) repeat-x;
+    background:$default-color;
     border:none;
     color:#FFF;
     cursor:pointer;
@@ -26,19 +26,16 @@ input[type=reset],input[type=button],button,input[type=submit],.sidebar input[ty
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
     border-radius:5px;
-    -moz-box-shadow:0 0 3px rgba(0,0,0,0.25);
-    -webkit-box-shadow:0 0 3px rgba(0,0,0,0.25);
-    box-shadow:0 0 3px rgba(0,0,0,0.25);
     text-shadow:0 -1px 1px rgba(0,0,0,0.35);
     border-bottom:1px solid rgba(0,0,0,0.25)
 }
 
 button[type=reset],input[type=reset] {
-    background:#44464A url(images/button-overlay.png) repeat-x
+    background:#44464A;
 }
 
 input[type=button]:hover,button:hover,input[type=submit]:hover,.sidebar input[type=submit]:hover,.page-content input[type=submit]:hover,a.funky-button:hover {
-    background:#F57A30;
+    background:darken($default-color, 10%);
     color:#FFF
 }
 

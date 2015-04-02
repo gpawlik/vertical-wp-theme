@@ -28,7 +28,7 @@ body {
     float:left;
     font-size:1em;
     line-height:1.4em;
-    padding:0 20px 0;
+    padding:25px 20px 0;
     position:fixed;
     top:0;
     bottom:0;
@@ -49,19 +49,16 @@ body {
 }
 
 a#logo {
-    border-bottom:4px solid #44464A;
     color:#FFF;
     display:block;
     font-size:2.5em;
     font-weight:700;
     letter-spacing:-2px;
     line-height:36px;
-    padding-bottom:20px;
     width:180px
 }
 
 #sidebar a#logo:hover {
-    border-bottom:4px solid #44464A
 }
 
 #logo img {
@@ -101,14 +98,14 @@ a#logo {
 }
 
 #main-navigation ul {
-    margin:20px 0
+    margin:20px 0 0;
 }
 
 #main-navigation a {
     color:#737373;
-    padding:8px 20px;
+    padding:5px 20px;
     font-family:"Oswald";
-    font-size:1.5em;
+    font-size:1.4em;
     text-transform:uppercase;
 }
 

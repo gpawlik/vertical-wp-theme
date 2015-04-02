@@ -261,7 +261,7 @@ body {
   float: left;
   font-size: 1em;
   line-height: 1.4em;
-  padding: 0 20px 0;
+  padding: 25px 20px 0;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -278,18 +278,13 @@ body {
   border-bottom: 1px dotted #737373; }
 
 a#logo {
-  border-bottom: 4px solid #44464A;
   color: #FFF;
   display: block;
   font-size: 2.5em;
   font-weight: 700;
   letter-spacing: -2px;
   line-height: 36px;
-  padding-bottom: 20px;
   width: 180px; }
-
-#sidebar a#logo:hover {
-  border-bottom: 4px solid #44464A; }
 
 #logo img {
   max-width: 180px; }
@@ -321,13 +316,13 @@ a#logo {
   display: block; }
 
 #main-navigation ul {
-  margin: 20px 0; }
+  margin: 20px 0 0; }
 
 #main-navigation a {
   color: #737373;
-  padding: 8px 20px;
+  padding: 5px 20px;
   font-family: "Oswald";
-  font-size: 1.5em;
+  font-size: 1.4em;
   text-transform: uppercase; }
 
 #main-navigation a:hover,
@@ -695,7 +690,8 @@ a#logo {
   position: absolute;
   right: 20px;
   top: 20px;
-  width: 80px; }
+  width: 80px;
+  display: none; }
 
 .post-scroll-holder span {
   display: inline-block;
@@ -1088,7 +1084,7 @@ label.error {
 
 /* ----- BUTTONS ----- */
 input[type=reset], input[type=button], button, input[type=submit], .sidebar input[type=submit], .page-content input[type=submit], a.funky-button {
-  background: #F57A30 url(images/button-overlay.png) repeat-x;
+  background: #ed3d30;
   border: none;
   color: #FFF;
   cursor: pointer;
@@ -1101,17 +1097,14 @@ input[type=reset], input[type=button], button, input[type=submit], .sidebar inpu
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35);
   border-bottom: 1px solid rgba(0, 0, 0, 0.25); }
 
 button[type=reset], input[type=reset] {
-  background: #44464A url(images/button-overlay.png) repeat-x; }
+  background: #44464A; }
 
 input[type=button]:hover, button:hover, input[type=submit]:hover, .sidebar input[type=submit]:hover, .page-content input[type=submit]:hover, a.funky-button:hover {
-  background: #F57A30;
+  background: #d72013;
   color: #FFF; }
 
 button[type=reset]:hover, input[type=reset]:hover {
