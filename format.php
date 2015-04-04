@@ -1,4 +1,6 @@
 <div class="page-intro">
+    
+        <?php echo gp_prev_next_page($post->ID, get_option( 'page_for_posts' )) ?>
 	
 	<!-- title -->
 	<h1><?php the_title(); ?></h1>

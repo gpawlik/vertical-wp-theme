@@ -15,6 +15,8 @@
 				$post = get_post( get_option('page_for_posts') ); ?>
 				
 				<div class="page-intro">
+                                    
+                                        <?php echo 'xxx' . gp_prev_next_page($post->ID) ?>
 					
 					<!-- title -->
 					<h1>

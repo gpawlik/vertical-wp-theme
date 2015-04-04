@@ -33,7 +33,10 @@ body {
     top:0;
     bottom:0;
     width:180px;
-    z-index:2
+    z-index:2;
+    .wp-toolbar & {
+        padding-top:25px + 32px;
+    }
 }
 
 #sidebar header {
@@ -42,10 +45,6 @@ body {
 
 #sidebar a {
     color:#737373
-}
-
-#sidebar a:hover{
-    border-bottom:1px dotted #737373
 }
 
 a#logo {
@@ -218,16 +217,41 @@ a#logo {
 }
 
 .page-intro, #colorbox .page-intro {
-    padding:38px 40px;
+    padding:25px 40px;
+    border-bottom:1px solid #dedede;
+    background:#fff;
+    position:relative;
     h1 {
-        color:#fff;
-        line-height:50px;
+        color:#333;
+        line-height:100%;
+        margin-right:95px;
     }
 }
-.page-intro {
-    background-image:url($header-image);    
-    background-position:center; 
-    background-repeat:no-repeat;
+.page-navigation {
+    position:absolute;
+    top:50%;
+    right:40px;
+    margin-top:-20px;
+    .page-navigation-item {
+        float:left;
+        margin-left:5px;        
+        a {
+            display:block;
+            width:40px;
+            height:40px;
+            background:$flat-sunflower;
+            &:hover {
+                background:darken($flat-sunflower, 5%);
+            }
+            span {
+                line-height:40px;
+                text-align:center;
+                display:block;
+                color:#333;
+                font-size:1.6em;                
+            }
+        }        
+    } 
 }
 
 .archive .page-intro,.tax-portfolio-category .page-intro,.page-template-page-portfolio-php .page-intro {

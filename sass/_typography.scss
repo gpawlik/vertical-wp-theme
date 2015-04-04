@@ -20,7 +20,7 @@ a,a:visited {
 }
 
 a:hover,a:visited:hover {
-    color:#3297FD
+    color:$flat-sunflower
 }
 
 .page-content a,.page-content a:visited {
@@ -147,6 +147,16 @@ h6 {
  
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.rotate90 {
+    @include transform(rotate(-90deg));
+}
+.rotate180 {
+    @include transform(rotate(-180deg));
+}
+.rotate270 {
+    @include transform(rotate(-270deg));
 }
  
 .icon-chat-alt:before { content: '\e800'; } /* 'î €' */

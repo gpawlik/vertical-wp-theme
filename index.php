@@ -12,6 +12,8 @@
 			<?php if ( is_front_page() ) { ?>
 				
 				<div class="page-intro">
+                                    
+                                        <?php echo gp_prev_next_page($post->ID) ?>
 					
 					<!-- title -->
 					<h1><?php bloginfo( 'name' ); ?></h1>
@@ -32,6 +34,8 @@
 					$post = get_post( get_option('page_for_posts') ); ?>
 					
 					<div class="page-intro">
+                                            
+                                                <?php echo gp_prev_next_page($post->ID) ?>
 						
 						<!-- title -->
 						<?php if ( get_post_meta( $post->ID, 'reach_page_title', true ) != '' ) { ?>

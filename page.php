@@ -12,6 +12,8 @@
 			<?php if ( get_post_meta( $post->ID, 'reach_hide_title', true ) != 'on' ) { ?>
 				
 				<div class="page-intro">
+                                    
+                                        <?php echo gp_prev_next_page($post->ID) ?>
 					
 					<!-- title -->
 					<?php if ( get_post_meta( $post->ID, 'reach_page_title', true ) != '' ) { ?>

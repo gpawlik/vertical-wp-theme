@@ -1261,7 +1261,8 @@ function gp_recent_posts($atts) {
                            '</a>' .
                            '<div class="gp-listing-text">' . 
                                '<span class="gp-listing-date">' . get_the_date() . '</span>' .
-                               '<p>' . wp_trim_words( get_the_excerpt(), 20, '... <a href="'. get_permalink() .'" class="gp-button">Read More</a>' ) . '</p>' .
+                               '<p class="gp-listing-content">' . wp_trim_words( get_the_excerpt(), 18, '...' ) . '</p>' .
+                               '<a href="'. get_permalink() .'" class="gp-button">Read More</a>' .
                            '</div>' .                            
                        '</li>';
         endwhile;
@@ -1325,4 +1326,54 @@ function gp_list_child_pages($atts) {
 }
 add_shortcode('childpages', 'gp_list_child_pages');
 
-?>
+
+/* Prev/Next Pages by Menu Order */
+function gp_prev_next_page($page_ID = "", $defaultID = "") {
+    if(empty($page_ID)) {
+        return false;
+    }
+    
+    $args = array(
+        'order'                  => 'ASC',
+        'orderby'                => 'menu_order',
+        'post_type'              => 'nav_menu_item',
+        'post_status'            => 'publish',
+        'output'                 => ARRAY_A,
+        'output_key'             => 'menu_order',
+        'nopaging'               => true,
+        'update_post_term_cache' => false 
+    );    
+    
+    $pagelist = wp_get_nav_menu_items( 'main', $args );
+       
+    $pages = array();
+    foreach ($pagelist as $page) {
+       $pages[] += $page->object_id;
+    }
+
+    $current = array_search($page_ID, $pages);    
+    $prevID = $pages[$current-1];
+    $nextID = $pages[$current+1];
+
+    $output = '<div class="page-navigation clearfix">';
+    if($current || $current === 0) {
+        if (!empty($prevID)) {
+            $output .= '<div class="page-navigation-item page-navigation-left"><a href="' . get_permalink($prevID) .'"><span class="icon-left-open"></span></a></div>';
+        }
+        if (!empty($nextID)) {
+            $output .= '<div class="page-navigation-item page-navigation-right"><a href="' . get_permalink($nextID) . '"><span class="icon-right-open"></span></a></div>';
+        }
+    } else {
+        $parentID = wp_get_post_parent_id($page_ID);
+        $parent = array_search($parentID, $pages); 
+        if($parent) {
+            $output .= '<div class="page-navigation-item page-navigation-up"><a href="' . get_permalink($parentID) . '"><span class="icon-right-open rotate90"></span></a></div>';
+        } else if ($defaultID) {
+            $output .= '<div class="page-navigation-item page-navigation-up"><a href="' . get_permalink($defaultID) . '"><span class="icon-right-open rotate90"></span></a></div>';
+        }        
+    }  
+
+    $output .= '</div>';
+
+    return $output;
+}

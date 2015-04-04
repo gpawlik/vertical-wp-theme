@@ -11,7 +11,7 @@
 }
 
 .blog-traditional-header {
-    background:$default-color;
+    background:url($background-neutral) center center;
 }
 
 .blog-traditional-thumbnail {
@@ -33,6 +33,12 @@
     font-weight:400;
     letter-spacing:-1px;
     padding:0;
+    a {
+        color:$flat-sunflower;
+        &:hover {
+            color:darken($flat-sunflower, 5%);
+        }
+    }
 }
 
 .blog-traditional .post-meta ul {
@@ -43,10 +49,14 @@
     display:block;
     width:100%;
     font-size:16px;
+    position:relative;
+    margin-left:10px;
 }
 .blog-traditional .post-meta ul li span {
     margin-right:8px;
     width:20px;
+    position:absolute;
+    left:-30px;
 }
 
 #content .pagination {
