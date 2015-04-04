@@ -42,8 +42,8 @@ html[xmlns] .slides {display: block;}
 
 /* Caption style */
 /* IE rgba() hack */
-.flex-caption { background: #0F1012; top: 20px; font-size: 1em;	left: 20px;	line-height: 1.6em; margin:0; padding: 7px 10px; position: absolute; z-index: 8; color: #FFF; max-width: 50%; zoom: 1; }
-.flex-caption small {	color: #737373;	display: block;	font-style: italic;	font-weight: 400; }
+.flex-caption { top: 50px; font-size: 2em; right: 20px;	line-height: 1em; font-weight:600; margin:0; padding: 20px; position: absolute; z-index: 8; color: #FFF; max-width: 40%; zoom: 1; }
+.flex-caption small {	color: #333; display: block; font-style: italic; margin-top:10px; line-height:1.4em;font-weight: 400; }
 
 /* Direction Nav */
 .flex-direction-nav li a {width: 52px; height: 52px; margin: -13px 0 0; display: block; background: url(theme/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px;}
@@ -52,7 +52,9 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav li .disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
 
 /* Control Nav */
-.flex-control-nav { position:absolute; right:7px; bottom:7px; margin-left:-40px; }
+.flex-control-nav { position:absolute; right:20px; bottom:7px; margin-left:-40px; }
 .flex-control-nav li {margin: 0 0 0 3px; display: inline-block; zoom: 1; *display: inline;}
-.flex-control-nav li a { background:url(../images/bullets.png) no-repeat; border:0; display:block; cursor: pointer; float:left; height:22px; text-indent:-9999px;	width:22px; }
+.flex-control-nav li a { background:url(../images/bullets.png) no-repeat; border:0; display:block; cursor: pointer; float:left; height:22px; text-indent:-9999px; width:18px; }
 .flex-control-nav li a.active {background-position:0 -22px;}
+
+#slider-stopper {display:none;}

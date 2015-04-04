@@ -99,7 +99,7 @@ h1 {
 
 h2 {
   border-top: 1px dotted #CCC;
-  font-size: 1em;
+  font-size: 2em;
   font-weight: 700;
   padding-top: 20px; }
 
@@ -262,8 +262,8 @@ body {
   background: #FFF;
   position: relative;
   -webkit-text-size-adjust: none;
-  background-image: url("images/bg/triangle2.png");
-  background-size: cover;
+  background-image: url("images/bg/pattern-grey.jpg");
+  /*background-size: cover;*/
   background-attachment: fixed;
   background-position: center; }
 
@@ -422,7 +422,7 @@ a#logo {
   width: 816px;
   position: relative;
   z-index: 1;
-  box-shadow: 500px 0 0 0 #eee; }
+  /*box-shadow:500px 0 0 0 #eee;*/ }
 
 #content {
   background-color: #FFF;
@@ -1440,7 +1440,8 @@ code {
 
 .page-content ul li, .post-content ul li {
   background: url(images/li.png) 0 6px no-repeat;
-  padding: 10px 0 0 22px; }
+  padding: 10px 0 0 22px;
+  font-size: 1.4em; }
 
 .page-content li ul, .post-content li ul {
   margin: 0; }

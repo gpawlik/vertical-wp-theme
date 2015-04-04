@@ -268,7 +268,9 @@ jQuery(document).ready(function($) {
 
 	if(jQuery.isFunction(jQuery.fn.flexslider)){
 		$('#slider').flexslider({
-			directionNav: false
+			directionNav: false,
+                        slideshowSpeed: 12000,
+                        pauseOnHover: true
 		});
 	}
 

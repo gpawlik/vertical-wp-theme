@@ -2,7 +2,7 @@
 
 // ---------- PROFILES POST TYPE --------- //
 
-add_action('init', 'create_raw_profiles_post_type');
+//add_action('init', 'create_raw_profiles_post_type');
 function create_raw_profiles_post_type() {
  
 	$labels = array(

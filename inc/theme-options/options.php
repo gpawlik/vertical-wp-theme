@@ -34,7 +34,7 @@ function optionsframework_options() {
 	// ------------------------------------
 	//	ENVATO API
 	// ------------------------------------
-	
+	/*
 	$options[] = array( "name"	=> __( "Envato API Settings", "funky_theme" ),
 						"desc"	=> __( "Envato API settings used to enable theme updating.", "funky_theme" ),
 						"type"	=> "heading" );
@@ -52,7 +52,7 @@ function optionsframework_options() {
 							"id"	=> "envato_apikey",
 							"std"	=> "",
 							"type"	=> "text" );
-							
+	*/						
 								
 	// ------------------------------------
 	//	APPEARANCE SETTINGS

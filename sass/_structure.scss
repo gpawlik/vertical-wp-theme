@@ -10,7 +10,7 @@ body {
     position:relative;
     -webkit-text-size-adjust:none;
     background-image: url($background-image);    
-    background-size: cover;
+    /*background-size: cover;*/
     background-attachment: fixed;
     background-position: center;
 }
@@ -206,7 +206,7 @@ a#logo {
     width:816px;
     position:relative;
     z-index:1;
-    box-shadow:500px 0 0 0 #eee;
+    /*box-shadow:500px 0 0 0 #eee;*/
 }
 
 #content {

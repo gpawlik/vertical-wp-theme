@@ -2,7 +2,7 @@
 
 // ---------- PORTFOLIO POST TYPE --------- //
 
-add_action('init', 'create_portfolio_post_type');
+//add_action('init', 'create_portfolio_post_type');
 function create_portfolio_post_type() {
  
 	$labels = array(
