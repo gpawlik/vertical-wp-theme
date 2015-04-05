@@ -35,6 +35,6 @@ $html_class = ( is_admin_bar_showing() ) ? 'wp-toolbar' : '';
 	<?php get_template_part( "background" ); ?>
 	
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> style="backaground-image:url(<?= $background_url ?>)">
 
 <a id="top"></a>

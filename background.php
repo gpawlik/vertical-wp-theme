@@ -38,37 +38,14 @@
 			}
 			
 		break;
+                
 
 	} ?>
 
 	<script>
 		jQuery(document).ready(function ($) {
 
-			if ($(window).width() > 900) {
-			
-				// Create image array
-				var images = [<?php echo $background_url; ?>];
-				
-				// Preloading the images
-				jQuery(images).each(function () {
-				   jQuery('<img/>')[0].src = this; 
-				});
-
-				// The index variable tracks current image
-				var index = 0;
-				
-				// Call backstretch and set fadeIn speed. Speed must be equal or greater than 1000.
-				jQuery.backstretch(images[index],{speed: 1000});
-				
-				<?php if ( get_post_meta( $postID, 'reach_background', true ) == "slideshow" ) { ?>
-					// Set slide interval
-					setInterval(function () {
-						index = (index >= images.length - 1) ? 0 : index + 1;
-						jQuery.backstretch(images[index]);
-					},5000);		
-				<?php } ?>
-				
-			}
+                        $('body').css('background-image', 'url(<?php echo $background_url; ?>)');
 			
 		});	
 	</script>

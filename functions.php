@@ -94,7 +94,7 @@ function funky_theme_setup() {
 	register_nav_menus(
 		array(
 			'main-navigation'	=> __( 'Main Navigation', 'raw_theme' ),
-			'sitemap'			=> __( 'Sitemap', 'raw_theme' )
+			'footer-navigation'			=> __( 'Footer', 'raw_theme' )
 		)
 	);
 

@@ -24,6 +24,19 @@
         <!-- copyright -->
         <div class="copyright">
             &copy; <?php echo date( "Y" ); ?> <a href="<?php echo home_url(); ?>/" ><?php bloginfo('name'); ?></a>. <span><?php echo of_get_option( 'copyright_text' ); ?></span>
+            
+            <div class="footer-navigation">
+            <?php wp_nav_menu( 
+                array( 
+                    'theme_location' => 'footer-navigation', 
+                    'container' => false,
+                    'menu_id' => 'footer-nav',
+                    'menu_class' => 'clearfix',
+                    'fallback_cb' => false
+                )
+            ); ?> 
+            </div>
+            
         </div>
 
     </div> <!-- #content-wrapper -->

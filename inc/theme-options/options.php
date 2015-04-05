@@ -310,7 +310,8 @@ function optionsframework_options() {
 	// ------------------------------------
 	//	JQUERY SETTINGS
 	// ------------------------------------
-	$options[] = array( "name" => __("jQuery Plugin Settings", "raw_theme"),
+	/*
+        $options[] = array( "name" => __("jQuery Plugin Settings", "raw_theme"),
 						"type" => "heading" );
 						
 		//Smooth Scroll
@@ -333,7 +334,7 @@ function optionsframework_options() {
 							"std"	=> "true",
 							"type"	=> "checkbox");
 				
-
+        */
 	// ------------------------------------
 	//	SOCIAL NETWORK SETTINGS
 	// ------------------------------------

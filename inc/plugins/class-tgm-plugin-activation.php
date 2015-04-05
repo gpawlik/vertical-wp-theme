@@ -183,10 +183,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			);
 
 			/** Annouce that the class is ready, and pass the object (for advanced use) */
-			do_action_ref_array( 'tgmpa_init', array( &$this ) );
+			//do_action_ref_array( 'tgmpa_init', array( &$this ) );
 
 			/** When the rest of WP has loaded, kick-start the rest of the class */
-			add_action( 'init', array( &$this, 'init' ) );
+			//add_action( 'init', array( &$this, 'init' ) );
 
 		}
 
