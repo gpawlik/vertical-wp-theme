@@ -98,7 +98,6 @@ h1 {
   margin-top: 10px; }
 
 h2 {
-  border-top: 1px dotted #CCC;
   font-size: 2em;
   font-weight: 700;
   padding-top: 20px; }
@@ -396,7 +395,15 @@ a#logo {
     font-size: 1.1em; }
     #footer .widget_recent_entries .post-date {
       color: #555;
-      font-size: 0.8em; }
+      font-size: 0.8em;
+      display: block; }
+
+#footer-nav {
+  display: table;
+  margin: 0 auto -10px; }
+  #footer-nav li {
+    float: left;
+    margin: 0 5px; }
 
 .widget-sidebar {
   margin: 0 0 40px; }
@@ -412,9 +419,7 @@ a#logo {
   color: #fff; }
 
 .copyright span {
-  clear: both;
-  display: block;
-  margin-top: -5px; }
+  clear: both; }
 
 /* ----- CONTENT ----- */
 #content-wrapper {
@@ -1237,6 +1242,10 @@ p .funky-button, p input[type=submit], #respond input[type=submit] {
 .gp-grid-4-5 {
   width: 78%; }
 
+@media only screen and (max-width: 680px) {
+  [class*="gp-grid-"] {
+    width: 98%;
+    text-align: center; } }
 /* ----------------------------------------
     STYLING
 ---------------------------------------- */
@@ -1383,9 +1392,10 @@ ul.gp-listing-posts {
       color: #aeaeae;
       margin-bottom: 5px; }
     ul.gp-listing-posts .gp-listing-text .gp-listing-content {
-      font-size: 1.5em;
+      font-size: 1.3em;
       margin-top: 0;
-      min-height: 126px; }
+      min-height: 126px;
+      line-height: 120%; }
 
 /* ----- QUOTES ----- */
 blockquote {
@@ -1810,7 +1820,11 @@ img.size-full {
 
   #sidebar {
     margin-bottom: 0;
-    padding: 40px 16px 20px; }
+    padding: 20px 16px 20px;
+    position: relative; }
+
+  .wp-toolbar #sidebar {
+    padding-top: 20px; }
 
   a#logo {
     border: none !important;
@@ -1832,7 +1846,8 @@ img.size-full {
     display: none; }
 
   #sidebar #main-navigation select {
-    display: inline-block; }
+    display: inline-block;
+    margin-top: 40px; }
 
   .social-button-holder {
     border: none;
@@ -1844,9 +1859,6 @@ img.size-full {
   #content-wrapper {
     padding: 0;
     width: 100%; }
-
-  .page-intro {
-    margin: 40px 20px; }
 
   .page-content {
     padding: 0 20px;
@@ -1865,28 +1877,14 @@ img.size-full {
     overflow: hidden;
     padding: 20px 0 0; }
 
-  #footer .widget {
-    float: left;
-    margin: 0 1% 20px;
-    width: 31%; }
-
-  #footer .widget:nth-child(1), #footer .widget:nth-child(2), #footer .widget:nth-child(3) {
-    border: none; }
-
-  #footer .widget:nth-child(4n) {
-    clear: both; }
-
-  .copyright {
-    margin: 40px 10px 0; }
-
-  .copyright span {
-    clear: none;
-    display: inline; }
-
   .pagination {
     margin: 0;
     text-align: right;
     padding: 20px 16px; }
+
+  /* ----- HOME ----- */
+  .flex-caption {
+    top: 20px; }
 
   /* ----- PORTFOLIO ----- */
   #filter {
@@ -1916,6 +1914,9 @@ img.size-full {
   .post-meta ul {
     padding: 0 16px; }
 
+  .page-content.with-social-buttons {
+    margin-top: 0; }
+
   /* ----- FORMS ----- */
   #sidebar select, #footer select {
     background-color: #fff;
@@ -1926,6 +1927,10 @@ img.size-full {
 
   /* ----- WIDGETS ----- */
   /* SOCIAL BUTTONS */
+  .social-button-holder {
+    position: relative;
+    margin-top: 30px; }
+
   .social-button-holder a {
     -moz-background-size: 24px 24px;
     -o-background-size: 24px 24px;
@@ -1951,7 +1956,15 @@ img.size-full {
     background: url(images/social/vimeo_48.png) no-repeat; }
 
   .youtube-button {
-    background: url(images/social/youtube_48.png) no-repeat; } }
+    background: url(images/social/youtube_48.png) no-repeat; }
+
+  /* Custom Scroll */
+  .scrollable .scroll-bar.vertical,
+  .scrollable .scroll-bar.horizontal {
+    display: none; }
+
+  .scrollable .viewport .overview {
+    position: relative; } }
 @media only screen and (max-width: 768px) {
   .social-button-holder {
     clear: both;
@@ -1960,7 +1973,31 @@ img.size-full {
 
   #two-column-text {
     float: none;
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+
+  .flex-caption {
+    max-width: 50%; } }
+@media only screen and (max-width: 680px) {
+  .PI_SimpleTwitterTweets .avatar img {
+    display: none; }
+
+  body {
+    font-size: 11px; }
+
+  ul.gp-listing-posts .gp-listing-image {
+    height: 250px; }
+
+  ul.gp-listing-posts .gp-listing-text .gp-listing-content {
+    min-height: inherit; }
+
+  #wrapper #gp-profile-footer {
+    margin: 0 auto; }
+
+  .flex-caption {
+    top: 30px;
+    max-width: 90%; }
+    .flex-caption small {
+      line-height: 120%; } }
 /* --------------------------------------------------------------------------------
     SMARTPHONE
 -------------------------------------------------------------------------------- */
@@ -1974,11 +2011,46 @@ img.size-full {
 
   #main-navigation {
     float: none;
-    margin: 0; }
+    margin: 0;
+    display: inline-block;
+    height: 30px !important;
+    overflow: hidden;
+    margin: 20px 0 0;
+    padding: 0; }
+
+  .page-content.with-social-buttons {
+    padding-top: 90px; }
+
+  #s-share-buttons {
+    height: auto; }
+
+  .page-intro, #colorbox .page-intro {
+    padding: 25px 20px; }
+
+  .page-navigation {
+    right: 15px; }
+
+  .home .flex-caption {
+    position: relative;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    background: #F1C40F;
+    text-align: center;
+    padding-bottom: 25px; }
+    .home .flex-caption small {
+      padding: 0 25px; }
+  .home .flexslider .slides img {
+    display: none; }
+  .home .flex-control-nav {
+    display: none; }
 
   /* ----- TYPOGRAPHY ----- */
+  body {
+    font-size: 10px; }
+
   h1 {
-    font-size: 3em; }
+    font-size: 4em; }
 
   .page-intro em {
     font-size: 1.5em; }

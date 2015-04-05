@@ -45,3 +45,10 @@
 .gp-grid-4-5 {
     width:78%
 }
+
+@media only screen and (max-width: 680px) {
+[class*="gp-grid-"] {
+    width:98%;
+    text-align:center;
+} 
+}

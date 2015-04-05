@@ -174,9 +174,18 @@ a#logo {
         .post-date {
             color:#555;
             font-size:0.8em;
+            display:block;
         }
     }
        
+}
+#footer-nav {
+    display:table;
+    margin:0 auto -10px;
+    li {
+        float:left;
+        margin:0 5px;
+    }
 }
 
 .widget-sidebar {
@@ -196,8 +205,6 @@ a#logo {
 
 .copyright span {
     clear:both;
-    display:block;
-    margin-top:-5px;
 }
 
 /* ----- CONTENT ----- */
