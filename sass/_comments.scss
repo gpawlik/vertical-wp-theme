@@ -15,30 +15,26 @@
 #comments {
     clear:both;
     margin:20px 0 0;
-    padding:0
-}
-
-#comments li {
-    list-style:none;
     padding:0;
-    margin:0
+    li {
+        list-style:none;
+        padding:0;
+        margin:0
+    }    
 }
 
 .comment {
     background:url(images/comment-thread-horizontal.png) repeat-y;
-    width:100%
-}
-
-.comment .comment {
-    background:url(images/comment-thread-vertical.png) no-repeat
-}
-
-.comment .children .children {
-    background:url(images/comment-thread-horizontal-2.png) repeat-y
-}
-
-.comment .comment .comment {
-    background:url(images/comment-thread-vertical-2.png) no-repeat
+    width:100%;
+    .comment {
+        background:url(images/comment-thread-vertical.png) no-repeat
+    }  
+    .children .children {
+        background:url(images/comment-thread-horizontal-2.png) repeat-y
+    }   
+    .comment .comment {
+        background:url(images/comment-thread-vertical-2.png) no-repeat
+    }    
 }
 
 /* FIRST LEVEL */
@@ -76,69 +72,62 @@
 
 #comments .comment small a {
     color:#999;
-    border-bottom:1px dotted transparent
-}
-
-#comments .comment small a:hover {
-    color:#3297FD
+    border-bottom:1px dotted transparent;
+    &:hover {
+        color:#3297FD
+    }    
 }
 
 .author-text {
-    padding:10px 10px 10px 95px
-}
-
-.author-text small {
+    padding:10px 10px 10px 95px;
+small {
     float:right;
     margin-top:4px
-}
-
-.author-text h6 {
+}    
+h6 {
     float:left;
     font-size:1em;
     font-weight:700;
-    margin:5px 0 10px
+    margin:5px 0 10px;
+    span {
+        color:#999;
+        font-size:.833em;
+        font-weight:400
+    }    
+    a {
+        color:#999;
+        border-bottom:1px dotted transparent;
+        &:hover {
+            color:#3297FD
+        }        
+    }    
 }
-
-.author-text h6 span {
-    color:#999;
-    font-size:.833em;
-    font-weight:400
-}
-
-.author-text h6 a {
-    color:#999;
-    border-bottom:1px dotted transparent
-}
-
-.author-text h6 a:hover {
-    color:#3297FD
 }
 
 .the-comment {
     border-top:1px solid #EEE;
     clear:both;
-    margin:20px 0 0
+    margin:20px 0 0;
+    p {
+        margin:10px 0 20px
+    }    
 }
 
-.the-comment p {
-    margin:10px 0 20px
-}
-
-#comments .comment-reply-link {
-    color:#999;
-    float:right;
-    font-size:.833em;
-    margin:0 0 5px
-}
-
-#comments .comment-reply-link:hover {
-    color:#3297FD
-}
-
-#comments #respond {
-    background-color:#FFF;
-    padding:0 0 40px
-}
+#comments {
+    .comment-reply-link {
+        color:#999;
+        float:right;
+        font-size:.833em;
+        margin:0 0 5px;
+        &:hover {
+            color:#3297FD
+        }
+    }  
+    #respond {
+        background-color:#FFF;
+        padding:0 0 40px
+    }    
+} 
 
 #reply-title {
     margin:20px 0 0

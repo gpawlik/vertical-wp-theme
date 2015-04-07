@@ -7,33 +7,29 @@
     top:20px;
     width:80px;
     display:none;
-}
-
-.post-scroll-holder span {
-    display:inline-block;
-    float:right
-}
-
-.post-scroll-holder a {
-    display:block;
-    height:40px;
-    width:40px
+    span {
+        display:inline-block;
+        float:right
+    }    
+    a {
+        display:block;
+        height:40px;
+        width:40px
+    }
 }
 
 .prev-post-link a {
-    background:url(images/colorbox-controls.png) no-repeat -80px 0
-}
-
-.prev-post-link a:hover {
-    background:url(images/colorbox-controls.png) no-repeat -80px -40px
+    background:url(images/colorbox-controls.png) no-repeat -80px 0;
+    &:hover {
+        background:url(images/colorbox-controls.png) no-repeat -80px -40px
+    }
 }
 
 .next-post-link a {
-    background:url(images/colorbox-controls.png) no-repeat -40px 0
-}
-
-.next-post-link a:hover {
-    background:url(images/colorbox-controls.png) no-repeat -40px -40px
+    background:url(images/colorbox-controls.png) no-repeat -40px 0;
+    &:hover {
+        background:url(images/colorbox-controls.png) no-repeat -40px -40px
+    }    
 }
 
 /* ----- Media players (YouTube, vimeo, embed)----- */
@@ -128,9 +124,9 @@ p + video,p + .rve-embed-container {
 .post-meta ul {
     color:#fff;
     font-size:.833em;
-}
-.post-meta ul a {
-    color:#fff;
+    a {
+        color:#fff;
+    }    
 }
 
 .format-video .post-meta ul {
@@ -150,11 +146,10 @@ aside.post-meta ul li:first-child {
     display:block;
     line-height:0;
     margin:0 0 10px;
-    position:relative
-}
-
-.gallery-image-link:first-child {
-    margin:20px 0 10px
+    position:relative;
+    &:first-child {
+        margin:20px 0 10px
+    }    
 }
 
 #two-column-gallery a img {
@@ -217,7 +212,15 @@ aside.post-meta ul li:first-child {
     clear:both;
     line-height:18px;
     margin:40px 0 0;
-    padding:18px 0 0
+    padding:18px 0 0;
+    a {
+        border:1px solid #EEE;
+        color:#737373;
+        display:inline-block;
+        font-size:1em;
+        margin-top:2px;
+        padding:2px 5px
+    }    
 }
 
 .tag-icon {
@@ -227,13 +230,4 @@ aside.post-meta ul li:first-child {
     height:24px;
     margin:0 10px 0 0;
     width:24px
-}
-
-.post-tags a {
-    border:1px solid #EEE;
-    color:#737373;
-    display:inline-block;
-    font-size:1em;
-    margin-top:2px;
-    padding:2px 5px
 }
