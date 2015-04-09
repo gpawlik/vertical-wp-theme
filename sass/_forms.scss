@@ -77,7 +77,7 @@ label.error {
     SIDEBAR FORMS
 ---------------------------------------- */
 .widget-sidebar input[type="text"],.widget-sidebar input[type="password"],.widget-sidebar textarea,.widget-sidebar select,#sidebar select {
-    background-color:#44464A;
+    background-color:$primary-dark;
     border:1px solid #222;
     color:#999
 }

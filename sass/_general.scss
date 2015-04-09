@@ -218,7 +218,7 @@ code {
 }
 
 .page-content ul li,.post-content ul li {
-    background:url(images/li.png) 0 6px no-repeat;
+    background:url('#{$images-folder}/li.png') 0 6px no-repeat;
     padding:10px 0 0 22px;
     font-size:1.4em;
 }
@@ -246,7 +246,7 @@ code {
 }
 
 .page-content ol ul li,.post-content ol ul li {
-    background:url(images/li.png) 0 6px no-repeat;
+    background:url('#{$images-folder}/li.png') 0 6px no-repeat;
     list-style-type:none;
     margin:0 0 0 -2px;
     padding:10px 0 0 22px
@@ -469,27 +469,27 @@ img.size-full {
 }
 
 .contact_address {
-    background:url(images/address_icon.png) 5px 2px no-repeat
+    background:url('#{$images-folder}/address_icon.png') 5px 2px no-repeat
 }
 
 .contact_phone {
-    background:url(images/phone_icon.png) 5px 2px no-repeat
+    background:url('#{$images-folder}/phone_icon.png') 5px 2px no-repeat
 }
 
 .contact_mobile {
-    background:url(images/mobile_icon.png) 5px 2px no-repeat
+    background:url('#{$images-folder}/mobile_icon.png') 5px 2px no-repeat
 }
 
 .contact_fax {
-    background:url(images/fax_icon.png) 5px 2px no-repeat
+    background:url('#{$images-folder}/fax_icon.png') 5px 2px no-repeat
 }
 
 .contact_website {
-    background:url(images/website_icon.png) 5px 2px no-repeat
+    background:url('#{$images-folder}/website_icon.png') 5px 2px no-repeat
 }
 
 .contact_email {
-    background:url(images/email_icon.png) 5px 2px no-repeat
+    background:url('#{$images-folder}/email_icon.png') 5px 2px no-repeat
 }
 
 /* ----- RSS ----- */
@@ -531,31 +531,31 @@ img.size-full {
 
 /* SOCIAL BUTTONS */
 .facebook-button {
-    background:url(images/social/facebook.png) no-repeat
+    background:url('#{$images-folder}/social/facebook.png') no-repeat
 }
 
 .twitter-button {
-    background:url(images/social/twitter.png) no-repeat
+    background:url('#{$images-folder}/social/twitter.png') no-repeat
 }
 
 .google-button {
-    background:url(images/social/google.png) no-repeat
+    background:url('#{$images-folder}/social/google.png') no-repeat
 }
 
 .dribbble-button {
-    background:url(images/social/dribbble.png) no-repeat
+    background:url('#{$images-folder}/social/dribbble.png') no-repeat
 }
 
 .linkedin-button {
-    background:url(images/social/linkedin.png) no-repeat
+    background:url('#{$images-folder}/social/linkedin.png') no-repeat
 }
 
 .vimeo-button {
-    background:url(images/social/vimeo.png) no-repeat
+    background:url('#{$images-folder}/social/vimeo.png') no-repeat
 }
 
 .youtube-button {
-    background:url(images/social/youtube.png) no-repeat
+    background:url('#{$images-folder}/social/youtube.png') no-repeat
 }
 
 /* ----- TWEET BOX ----- */
@@ -593,11 +593,9 @@ img.size-full {
 }
 
 #footer .searchform .searchsubmit {
-    background:#44464A url(images/search-button.png) no-repeat;
+    background:$primary-dark url('#{$images-folder}/search-button.png') no-repeat;
     border-bottom:none;
-    border-radius:0;
-    -moz-border-radius:0;
-    -webkit-border-radius:0;
+    @include border-radius(0px);
     box-shadow:none;
     -webkit-box-shadow:none;
     display:block;
@@ -614,7 +612,7 @@ img.size-full {
 }
 
 #footer .searchform .searchsubmit:hover {
-    background:#44464A url(images/search-button.png) no-repeat bottom left
+    background:$primary-dark url('#{$images-folder}/search-button.png') no-repeat bottom left
 }
 
 /* ----- TWITTER ----- */

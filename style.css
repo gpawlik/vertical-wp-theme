@@ -552,7 +552,7 @@ a#logo {
 
 .page-content .pagination span {
   padding: 3px 5px;
-  border: 1px solid #EEE; }
+  border: 1px solid #eee; }
 
 .page-content .pagination ul {
   margin: 0;
@@ -680,7 +680,7 @@ a#logo {
   word-wrap: break-word; }
 
 .post-icon {
-  background: url(images/post-icons.png) no-repeat;
+  background: url("images/post-icons.png") no-repeat;
   bottom: 0;
   height: 39px;
   position: absolute;
@@ -737,14 +737,14 @@ a#logo {
     width: 40px; }
 
 .prev-post-link a {
-  background: url(images/colorbox-controls.png) no-repeat -80px 0; }
+  background: url("images/colorbox-controls.png") no-repeat -80px 0; }
   .prev-post-link a:hover {
-    background: url(images/colorbox-controls.png) no-repeat -80px -40px; }
+    background: url("images/colorbox-controls.png") no-repeat -80px -40px; }
 
 .next-post-link a {
-  background: url(images/colorbox-controls.png) no-repeat -40px 0; }
+  background: url("images/colorbox-controls.png") no-repeat -40px 0; }
   .next-post-link a:hover {
-    background: url(images/colorbox-controls.png) no-repeat -40px -40px; }
+    background: url("images/colorbox-controls.png") no-repeat -40px -40px; }
 
 /* ----- Media players (YouTube, vimeo, embed)----- */
 p + video, p + .rve-embed-container {
@@ -846,7 +846,7 @@ aside.post-meta ul li:first-child {
   margin: 0; }
 
 .image-hover-icon {
-  background: url(images/zoom-icon.jpg) 0 0 no-repeat;
+  background: url("images/zoom-icon.jpg") 0 0 no-repeat;
   height: 40px;
   position: absolute;
   right: 0;
@@ -863,7 +863,7 @@ aside.post-meta ul li:first-child {
 
 /* ----- ADDTHIS ----- */
 .share-holder {
-  background: url(images/share-holder-bg.png) no-repeat;
+  background: url("images/share-holder-bg.png") no-repeat;
   display: none;
   float: left;
   left: -20px;
@@ -876,8 +876,8 @@ aside.post-meta ul li:first-child {
   background: #44464A;
   padding: 10px;
   width: 100px;
-  -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
   border-radius: 5px; }
 
 #wrapper .wp-post-image {
@@ -896,7 +896,7 @@ aside.post-meta ul li:first-child {
   margin: 40px 0 0;
   padding: 18px 0 0; }
   .post-tags a {
-    border: 1px solid #EEE;
+    border: 1px solid #eee;
     color: #737373;
     display: inline-block;
     font-size: 1em;
@@ -904,7 +904,7 @@ aside.post-meta ul li:first-child {
     padding: 2px 5px; }
 
 .tag-icon {
-  background: url(images/tag-icon.png) no-repeat;
+  background: url("images/tag-icon.png") no-repeat;
   display: block;
   float: left;
   height: 24px;
@@ -1002,19 +1002,19 @@ label.error {
     margin: 0; }
 
 .comment {
-  background: url(images/comment-thread-horizontal.png) repeat-y;
+  background: url("images/comment-thread-horizontal.png") repeat-y;
   width: 100%; }
   .comment .comment {
-    background: url(images/comment-thread-vertical.png) no-repeat; }
+    background: url("images/comment-thread-vertical.png") no-repeat; }
   .comment .children .children {
-    background: url(images/comment-thread-horizontal-2.png) repeat-y; }
+    background: url("images/comment-thread-horizontal-2.png") repeat-y; }
   .comment .comment .comment {
-    background: url(images/comment-thread-vertical-2.png) no-repeat; }
+    background: url("images/comment-thread-vertical-2.png") no-repeat; }
 
 /* FIRST LEVEL */
 .comment-holder {
   background: #FFF;
-  border: 1px solid #EEE;
+  border: 1px solid #eee;
   float: right;
   margin: 0 0 20px;
   overflow: hidden;
@@ -1033,7 +1033,7 @@ label.error {
   background-color: #F6F6F6; }
 
 .comment .avatar {
-  border: 1px solid #EEE;
+  border: 1px solid #eee;
   left: 10px;
   padding: 3px;
   position: absolute;
@@ -1066,7 +1066,7 @@ label.error {
         color: #3297FD; }
 
 .the-comment {
-  border-top: 1px solid #EEE;
+  border-top: 1px solid #eee;
   clear: both;
   margin: 20px 0 0; }
   .the-comment p {
@@ -1410,7 +1410,7 @@ code {
   margin: 20px 0 0; }
 
 .page-content ul li, .post-content ul li {
-  background: url(images/li.png) 0 6px no-repeat;
+  background: url("images/li.png") 0 6px no-repeat;
   padding: 10px 0 0 22px;
   font-size: 1.4em; }
 
@@ -1432,7 +1432,7 @@ code {
   margin: 0; }
 
 .page-content ol ul li, .post-content ol ul li {
-  background: url(images/li.png) 0 6px no-repeat;
+  background: url("images/li.png") 0 6px no-repeat;
   list-style-type: none;
   margin: 0 0 0 -2px;
   padding: 10px 0 0 22px; }
@@ -1609,22 +1609,22 @@ img.size-full {
   padding-left: 30px; }
 
 .contact_address {
-  background: url(images/address_icon.png) 5px 2px no-repeat; }
+  background: url("images/address_icon.png") 5px 2px no-repeat; }
 
 .contact_phone {
-  background: url(images/phone_icon.png) 5px 2px no-repeat; }
+  background: url("images/phone_icon.png") 5px 2px no-repeat; }
 
 .contact_mobile {
-  background: url(images/mobile_icon.png) 5px 2px no-repeat; }
+  background: url("images/mobile_icon.png") 5px 2px no-repeat; }
 
 .contact_fax {
-  background: url(images/fax_icon.png) 5px 2px no-repeat; }
+  background: url("images/fax_icon.png") 5px 2px no-repeat; }
 
 .contact_website {
-  background: url(images/website_icon.png) 5px 2px no-repeat; }
+  background: url("images/website_icon.png") 5px 2px no-repeat; }
 
 .contact_email {
-  background: url(images/email_icon.png) 5px 2px no-repeat; }
+  background: url("images/email_icon.png") 5px 2px no-repeat; }
 
 /* ----- RSS ----- */
 .rsswidget, .rss-date, .rssSummary {
@@ -1660,25 +1660,25 @@ img.size-full {
 
 /* SOCIAL BUTTONS */
 .facebook-button {
-  background: url(images/social/facebook.png) no-repeat; }
+  background: url("images/social/facebook.png") no-repeat; }
 
 .twitter-button {
-  background: url(images/social/twitter.png) no-repeat; }
+  background: url("images/social/twitter.png") no-repeat; }
 
 .google-button {
-  background: url(images/social/google.png) no-repeat; }
+  background: url("images/social/google.png") no-repeat; }
 
 .dribbble-button {
-  background: url(images/social/dribbble.png) no-repeat; }
+  background: url("images/social/dribbble.png") no-repeat; }
 
 .linkedin-button {
-  background: url(images/social/linkedin.png) no-repeat; }
+  background: url("images/social/linkedin.png") no-repeat; }
 
 .vimeo-button {
-  background: url(images/social/vimeo.png) no-repeat; }
+  background: url("images/social/vimeo.png") no-repeat; }
 
 .youtube-button {
-  background: url(images/social/youtube.png) no-repeat; }
+  background: url("images/social/youtube.png") no-repeat; }
 
 /* ----- TWEET BOX ----- */
 .widget .tweets {
@@ -1709,11 +1709,11 @@ img.size-full {
   width: 100%; }
 
 #footer .searchform .searchsubmit {
-  background: #44464A url(images/search-button.png) no-repeat;
+  background: #44464A url("images/search-button.png") no-repeat;
   border-bottom: none;
-  border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
   box-shadow: none;
   -webkit-box-shadow: none;
   display: block;
@@ -1729,7 +1729,7 @@ img.size-full {
   width: 26px; }
 
 #footer .searchform .searchsubmit:hover {
-  background: #44464A url(images/search-button.png) no-repeat bottom left; }
+  background: #44464A url("images/search-button.png") no-repeat bottom left; }
 
 /* ----- TWITTER ----- */
 .raw_twitter {
@@ -1889,25 +1889,25 @@ img.size-full {
     background-size: 24px 24px; }
 
   .facebook-button {
-    background: url(images/social/facebook_48.png) no-repeat; }
+    background: url("images/social/facebook_48.png") no-repeat; }
 
   .twitter-button {
-    background: url(images/social/twitter_48.png) no-repeat; }
+    background: url("images/social/twitter_48.png") no-repeat; }
 
   .google-button {
-    background: url(images/social/google_48.png) no-repeat; }
+    background: url("images/social/google_48.png") no-repeat; }
 
   .dribbble-button {
-    background: url(images/social/dribbble_48.png) no-repeat; }
+    background: url("images/social/dribbble_48.png") no-repeat; }
 
   .linkedin-button {
-    background: url(images/social/linkedin_48.png) no-repeat; }
+    background: url("images/social/linkedin_48.png") no-repeat; }
 
   .vimeo-button {
-    background: url(images/social/vimeo_48.png) no-repeat; }
+    background: url("images/social/vimeo_48.png") no-repeat; }
 
   .youtube-button {
-    background: url(images/social/youtube_48.png) no-repeat; }
+    background: url("images/social/youtube_48.png") no-repeat; }
 
   /* Custom Scroll */
   .scrollable .scroll-bar.vertical,
@@ -2128,9 +2128,9 @@ img.size-full {
   input[type="text"], input[type="password"], textarea, select {
     box-sizing: border-box;
     width: 100%;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0; }
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px; }
 
   #map_canvas-contact .google-map {
     height: auto;

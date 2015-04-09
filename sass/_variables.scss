@@ -1,8 +1,13 @@
 $background-image:'images/bg/pattern-grey.jpg';
-$background-neutral:'images/bg/pattern-grey.jpg';
+$background-neutral:$background-image;
+
+$images-folder:'images';
 
 $default-color:#ed3d30;
 $sidebar-color:#0F1012;
+
+$primary-dark:#44464A;
+$primary-light:#eee;
 
 // +-------------------------------------------------------------------------+
 // | Flat UI                                                                 |

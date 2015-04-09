@@ -108,13 +108,13 @@ a#logo {
 
 #main-navigation a:hover,
 #main-navigation li.current_page_item a {
-    background:#44464A;
+    background:$primary-dark;
     border:none;
     color:#FFF
 }
 
 #main-navigation .hover {
-    background:#44464A
+    background:$primary-dark
 }
 
 #main-navigation .hover > a {
@@ -127,7 +127,7 @@ a#logo {
 
 /* NAVIGATION SUBMENUS */
 #main-navigation ul ul {
-    background:#44464A;
+    background:$primary-dark;
     display:none;
     left:200px;
     margin:0;
@@ -339,7 +339,7 @@ a#logo {
 }
 
 .pagination a:hover {
-    color:#44464A;
+    color:$primary-dark;
     text-decoration:none
 }
 
@@ -355,7 +355,7 @@ a#logo {
 
 .page-content .pagination span {
     padding:3px 5px;
-    border:1px solid #EEE
+    border:1px solid $primary-light
 }
 
 .page-content .pagination ul {

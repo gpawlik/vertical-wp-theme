@@ -19,16 +19,16 @@
 }
 
 .prev-post-link a {
-    background:url(images/colorbox-controls.png) no-repeat -80px 0;
+    background:url('#{$images-folder}/colorbox-controls.png') no-repeat -80px 0;
     &:hover {
-        background:url(images/colorbox-controls.png) no-repeat -80px -40px
+        background:url('#{$images-folder}/colorbox-controls.png') no-repeat -80px -40px
     }
 }
 
 .next-post-link a {
-    background:url(images/colorbox-controls.png) no-repeat -40px 0;
+    background:url('#{$images-folder}/colorbox-controls.png') no-repeat -40px 0;
     &:hover {
-        background:url(images/colorbox-controls.png) no-repeat -40px -40px
+        background:url('#{$images-folder}/colorbox-controls.png') no-repeat -40px -40px
     }    
 }
 
@@ -157,7 +157,7 @@ aside.post-meta ul li:first-child {
 }
 
 .image-hover-icon {
-    background:url(images/zoom-icon.jpg) 0 0 no-repeat;
+    background:url('#{$images-folder}/zoom-icon.jpg') 0 0 no-repeat;
     height:40px;
     position:absolute;
     right:0;
@@ -177,7 +177,7 @@ aside.post-meta ul li:first-child {
 
 /* ----- ADDTHIS ----- */
 .share-holder {
-    background:url(images/share-holder-bg.png) no-repeat;
+    background:url('#{$images-folder}/share-holder-bg.png') no-repeat;
     display:none;
     float:left;
     left:-20px;
@@ -188,12 +188,10 @@ aside.post-meta ul li:first-child {
 }
 
 .addthis_toolbox {
-    background:#44464A;
+    background:$primary-dark;
     padding:10px;
     width:100px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px
+    @include border-radius(5px);
 }
 
 #wrapper .wp-post-image {
@@ -208,13 +206,13 @@ aside.post-meta ul li:first-child {
 
 /* ----- TAGS ----- */
 .post-tags {
-    border-top:4px solid #44464A;
+    border-top:4px solid $primary-dark;
     clear:both;
     line-height:18px;
     margin:40px 0 0;
     padding:18px 0 0;
     a {
-        border:1px solid #EEE;
+        border:1px solid $primary-light;
         color:#737373;
         display:inline-block;
         font-size:1em;
@@ -224,7 +222,7 @@ aside.post-meta ul li:first-child {
 }
 
 .tag-icon {
-    background:url(images/tag-icon.png) no-repeat;
+    background:url('#{$images-folder}/tag-icon.png') no-repeat;
     display:block;
     float:left;
     height:24px;

@@ -167,31 +167,31 @@ a#logo {
 }
 
 .facebook-button {
-    background:url(images/social/facebook_48.png) no-repeat
+    background:url('#{$images-folder}/social/facebook_48.png') no-repeat
 }
 
 .twitter-button {
-    background:url(images/social/twitter_48.png) no-repeat
+    background:url('#{$images-folder}/social/twitter_48.png') no-repeat
 }
 
 .google-button {
-    background:url(images/social/google_48.png) no-repeat
+    background:url('#{$images-folder}/social/google_48.png') no-repeat
 }
 
 .dribbble-button {
-    background:url(images/social/dribbble_48.png) no-repeat
+    background:url('#{$images-folder}/social/dribbble_48.png') no-repeat
 }
 
 .linkedin-button {
-    background:url(images/social/linkedin_48.png) no-repeat
+    background:url('#{$images-folder}/social/linkedin_48.png') no-repeat
 }
 
 .vimeo-button {
-    background:url(images/social/vimeo_48.png) no-repeat
+    background:url('#{$images-folder}/social/vimeo_48.png') no-repeat
 }
 
 .youtube-button {
-    background:url(images/social/youtube_48.png) no-repeat
+    background:url('#{$images-folder}/social/youtube_48.png') no-repeat
 }
 
 /* Custom Scroll */
@@ -462,9 +462,7 @@ blockquote.half {
 input[type="text"],input[type="password"],textarea,select {
     box-sizing:border-box;
     width:100%;
-    -webkit-border-radius:0;
-    -moz-border-radius:0;
-    border-radius:0
+    @include border-radius(0px);
 }
 
 #map_canvas-contact .google-map {

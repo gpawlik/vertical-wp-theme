@@ -119,7 +119,7 @@
 }
 
 .post-icon {
-    background:url(images/post-icons.png) no-repeat;
+    background:url('#{$images-folder}/post-icons.png') no-repeat; 
     bottom:0;
     height:39px;
     position:absolute;
