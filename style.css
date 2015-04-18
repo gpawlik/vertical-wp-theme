@@ -418,6 +418,10 @@ a#logo {
 .copyright span {
   clear: both; }
 
+.upper-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%; }
+
 /* ----- CONTENT ----- */
 #content-wrapper {
   float: right;

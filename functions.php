@@ -737,6 +737,7 @@ function funky_register_sidebars() {
 		__( 'Home Page Sidebar', 'raw_theme' )	=> __( 'Sidebar used on home page template.', 'raw_theme' ),
 		__( 'Post Sidebar', 'raw_theme' )	=> __( 'Sidebar used on blog index, archives, search page and posts.', 'raw_theme' ),
 		__( 'Portfolio Sidebar', 'raw_theme' )	=> __( 'Sidebar used on portfolio index and portfolio items.', 'raw_theme' ),
+                __( 'Footer Upper', 'raw_theme' )	=> __( 'Footer sidebar upper column', 'raw_theme' ),
                 __( 'Footer Left', 'raw_theme' )	=> __( 'Footer sidebar left column', 'raw_theme' ),
                 __( 'Footer Center', 'raw_theme' )	=> __( 'Footer sidebar center column', 'raw_theme' ),
                 __( 'Footer Right', 'raw_theme' )	=> __( 'Footer sidebar right column', 'raw_theme' ),

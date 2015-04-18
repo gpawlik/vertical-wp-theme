@@ -1,4 +1,6 @@
-		
+	
+        
+
 	<footer id="footer">
 	
             <div class="clearfix">
@@ -17,6 +19,10 @@
                     <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar(__( 'Footer Right', 'raw_theme' )) ) ?>
                 </div>
                 <!-- /End 3/3 -->
+            </div>
+            
+            <div class="upper-footer clearfix">
+                <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar(__( 'Footer Upper', 'raw_theme' )) ) ?>
             </div>
 	
 	</footer>
